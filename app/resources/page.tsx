@@ -9,10 +9,14 @@ export default async function ResourcesPage() {
     <>
       {/* red header */}
       <PageHeader>
-        <h1>RESOURCES</h1>
-        <PageSubtitle>
-          A COMMUNITY-DRIVEN COLLECTION OF RESOURCES TO AID YOU IN YOUR CS ENDEAVORS.
-        </PageSubtitle>
+      <h1 className="mb-4 text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-wide text-[var(--cream-light)]">
+  RESOURCES
+</h1>
+
+
+<PageSubtitle className="text-[var(--cream)]">
+  A COMMUNITY-DRIVEN COLLECTION OF RESOURCES TO AID YOU IN YOUR CS ENDEAVORS.
+</PageSubtitle>
       </PageHeader>
 
       {/* suggestion box */}
