@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-[var(--usacs-red-light)] py-6 mt-20">
+    <footer className="w-full bg-[var(--usacs-red-light)] py-6">
       <div className="flex justify-center gap-6">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <img src="/icons/Facebook.png" alt="Facebook" className="h-6 w-6" />

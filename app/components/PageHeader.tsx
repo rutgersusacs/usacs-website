@@ -12,7 +12,7 @@ export default function PageHeader({
   return (
     <header
       className={`
-        bg-gradient-to-b from-[var(--usacs-red-light)] to-[var(--usacs-red-dark)]
+        bg-gradient-to-b from-[var(--usacs-red-dark)] to-[var(--usacs-red-light)]
         pt-4 pb-20
         px-4
         rounded-b-[40px]
@@ -27,3 +27,4 @@ export default function PageHeader({
     </header>
   );
 }
+

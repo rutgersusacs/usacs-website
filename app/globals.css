@@ -4,10 +4,10 @@
 
 /* #colors */
 :root {
-  --usacs-red-light: #A52A21;
-  --usacs-red-dark: #7B1915;
+  --usacs-red-light: #AF2F2E;
+  --usacs-red-dark: #610C0B;
 
-  --cream: #F7F2E4;
+  --cream: #FBF4E4;
   --white: #ffffff;
 
   --text-dark: #2B2B2B;
@@ -16,6 +16,12 @@
   --border-light: #E6E2D6;
 
   --cream-light: #FBF4E4;
+  --light-red-box: #e0c8c1;
+
+  --resource-tile: #761413;
+
+  --resource-circle: #AD736B;
+
 
 }
 
