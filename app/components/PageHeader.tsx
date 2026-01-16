@@ -21,9 +21,7 @@ export default function PageHeader({
     >
       <NavBar />
 
-      <div className="mt-12 text-center">
-        {children}
-      </div>
+      <div className="mt-12 text-center">{children}</div>
     </header>
   );
 }

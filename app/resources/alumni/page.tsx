@@ -4,20 +4,13 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 export default async function AlumniPage() {
-  const filePath = path.join(
-    process.cwd(),
-    "content",
-    "alumni",
-    "alumni.md"
-  );
+  const filePath = path.join(process.cwd(), "content", "alumni", "alumni.md");
 
   const file = fs.readFileSync(filePath, "utf8");
 
   return (
-<div className="max-w-[900px] mx-auto py-10 px-6">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-        {file}
-      </ReactMarkdown>
+    <div className="max-w-[900px] mx-auto py-10 px-6">
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{file}</ReactMarkdown>
     </div>
   );
 }

@@ -8,16 +8,14 @@ export default async function InterviewingPage() {
     process.cwd(),
     "content",
     "interviewing",
-    "interviewing.md"
+    "interviewing.md",
   );
 
   const file = fs.readFileSync(filePath, "utf8");
 
   return (
-<div className="max-w-[900px] mx-auto py-10 px-6">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-        {file}
-      </ReactMarkdown>
+    <div className="max-w-[900px] mx-auto py-10 px-6">
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{file}</ReactMarkdown>
     </div>
   );
 }

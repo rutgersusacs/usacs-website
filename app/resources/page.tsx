@@ -9,14 +9,14 @@ export default async function ResourcesPage() {
     <>
       {/* red header */}
       <PageHeader>
-      <h1 className="mb-4 text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-wide text-[var(--cream-light)]">
-  RESOURCES
-</h1>
+        <h1 className="mb-4 text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-wide text-[var(--cream-light)]">
+          RESOURCES
+        </h1>
 
-
-<PageSubtitle className="text-[var(--cream)]">
-  A COMMUNITY-DRIVEN COLLECTION OF RESOURCES TO AID YOU IN YOUR CS ENDEAVORS.
-</PageSubtitle>
+        <PageSubtitle className="text-[var(--cream)]">
+          A COMMUNITY-DRIVEN COLLECTION OF RESOURCES TO AID YOU IN YOUR CS
+          ENDEAVORS.
+        </PageSubtitle>
       </PageHeader>
 
       {/* suggestion box */}
@@ -34,7 +34,6 @@ export default async function ResourcesPage() {
       {/* resource cards */}
       <SectionWrapper>
         <section className="resource-grid">
-
           <Card className="resource-card">
             <a href="/resources/academics" className="resource-link">
               <div className="resource-icon">
@@ -56,8 +55,8 @@ export default async function ResourcesPage() {
               </div>
               <h3>CAREER</h3>
               <p>
-                How to grow your skills, connect with the right people, and unlock
-                new opportunities!
+                How to grow your skills, connect with the right people, and
+                unlock new opportunities!
               </p>
             </a>
           </Card>
@@ -96,13 +95,12 @@ export default async function ResourcesPage() {
               </div>
               <h3>ALUMNI ADVICE</h3>
               <p>
-                Practical tips from graduates on thriving in CS, including how to
-                build experience, explore career options, and avoid common
+                Practical tips from graduates on thriving in CS, including how
+                to build experience, explore career options, and avoid common
                 pitfalls.
               </p>
             </a>
           </Card>
-
         </section>
       </SectionWrapper>
     </>
