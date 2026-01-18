@@ -18,6 +18,7 @@ type CardProps = {
   name: string;
   position: string;
   major: string;
+  minor?: string;
   description1: string;
   description2: string;
   imageSrc: string;
@@ -28,13 +29,15 @@ const Card = ({
   name,
   position,
   major,
+  minor,
   description1,
   description2,
   imageSrc,
   isGod,
 }: CardProps) => {
-  const bgColor = isGod ? "red" : "#e6d4c5"; // Red for isGod true, default otherwise
-  const fontColor = isGod ? "white" : "#5a4634"; // White for isGod true, default otherwise
+  const bgColor = isGod ? "#481110" : "#E4D1C3"; // Red for isGod true, default otherwise
+  const fontColor = isGod ? "#fbf4e4" : "#54412F"; // White for isGod true, default otherwise
+  const descriptionSize = isGod ? "text-sm" : "text-base";
 
   return (
     <div className={`profileCard`} style={{ backgroundColor: bgColor }}>
@@ -56,14 +59,26 @@ const Card = ({
             </p>
 
             <div className={`bioMajorDiv`} style={{ color: fontColor }}>
-              <span className="bioMajorLabel">Major:</span>
-              <span>{major}</span>
+              <p>
+                Major:
+                <span className="font-light"> {major}</span>
+              </p>
+
+              {minor && (
+                <p>
+                  Minor:
+                  <span className="font-light"> {minor}</span>
+                </p>
+              )}
             </div>
           </div>
         </div>
 
         {/* Description */}
-        <div className={"description"} style={{ color: fontColor }}>
+        <div
+          className={"description " + descriptionSize}
+          style={{ color: fontColor }}
+        >
           <p>{description1}</p>
           <p>{description2}</p>
         </div>
