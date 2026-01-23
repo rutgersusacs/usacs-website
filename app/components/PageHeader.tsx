@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 
 type PageHeaderProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
 };
 
