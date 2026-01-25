@@ -1,4 +1,9 @@
-# Systematic Interview Process
+---
+title: "Systematic Interview Process"
+writtenBy: "Sakib"
+published: "October 5, 2019"
+readTime: "6 min"
+---
 
 I like lists so I made this and whenever I did a mock interview with someone, I used this as a reference until it became ingrained in the way I do interviews. It helps a lot.
 
