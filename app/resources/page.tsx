@@ -321,8 +321,8 @@ export default async function ResourcesPage() {
 
   {/* Text */}
   <div className="max-w-[520px]">
-    <h3 className="mb-4 text-xl font-bold text-[#87111D]">THE CSL</h3>
-    <p className="text-base leading-7 text-[#54412F]">
+    <h3 className="mb-4 text-3xl font-bold text-[#87111D]">THE CSL</h3>
+    <p className="text-xl leading-7 text-[#54412F]">
       The CSL (Coding & Social Lounge) is located on the second floor of the Hill
       Bigliani Room 252. Part of the Computer Science Instructional Labs, the CSL
       was designed to provide students their own atmosphere for collaboration
@@ -335,8 +335,8 @@ export default async function ResourcesPage() {
 <div className="grid grid-cols-2 items-start gap-20">
   {/* Text */}
   <div className="max-w-[520px]">
-    <h3 className="mb-4 text-xl font-bold text-[#87111D]">MELTDOWN LAB</h3>
-    <p className="text-base leading-7 text-[#54412F]">
+    <h3 className="mb-4 text-3xl font-bold text-[#87111D]">MELTDOWN LAB</h3>
+    <p className="text-xl leading-7 text-[#54412F]">
       Right next door to the CSL, the Meltdown Lab is stocked with Linux
       machines and whiteboards, perfect for late night cram sessions.
     </p>
@@ -365,8 +365,8 @@ export default async function ResourcesPage() {
 
   {/* Text */}
   <div className="max-w-[520px]">
-    <h3 className="mb-4 text-xl font-bold text-[#87111D]">HACKERSPACE</h3>
-    <p className="text-base leading-7 text-[#54412F]">
+    <h3 className="mb-4 text-3xl font-bold text-[#87111D]">HACKERSPACE</h3>
+    <p className="text-xl leading-7 text-[#54412F]">
       The Hack-R-space is located in Hill 120. The Hack-R-Space is a workshop
       for students to tinker and build. It offers access to an abundance of
       resources, including 3D printing, robotics, Oculus Rifts, and
@@ -379,8 +379,8 @@ export default async function ResourcesPage() {
 <div className="grid grid-cols-2 items-start gap-20">
   {/* Text */}
   <div className="max-w-[520px]">
-    <h3 className="mb-4 text-xl font-bold text-[#87111D]">MAKERSPACE</h3>
-    <p className="text-base leading-7 text-[#54412F]">
+    <h3 className="mb-4 text-3xl font-bold text-[#87111D]">MAKERSPACE</h3>
+    <p className="text-xl leading-7 text-[#54412F]">
       The Makerspace is designed for Rutgers affiliates of all experience
       levels to bring their ideas to life. Located near Livingston Campus,
       the Makerspace is a tech atelier for students to design and construct
