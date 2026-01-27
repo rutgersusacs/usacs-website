@@ -1,9 +1,9 @@
 export default function NavBar() {
   const linkClass =
-  "px-3 py-2 text-white font-bold text-sm no-underline";
+    "px-3 py-2 text-white font-bold text-sm no-underline";
 
   return (
-<nav className="sticky top-0 z-50 flex justify-end gap-6 px-8 py-2">      
+    <nav className="sticky top-0 z-50 bg-[var(--usacs-red-dark)] shadow-sm flex items-center justify-end gap-6 px-8 h-14">
       <a href="/" className={linkClass}>Home</a>
       <a href="/mission" className={linkClass}>Mission</a>
       <a href="/board" className={linkClass}>Board</a>
