@@ -49,10 +49,10 @@ export default async function ResourcesPage() {
     mx-auto
     mt-10 mb-14
     grid
-    grid-cols-3
+    grid-cols-2
     gap-x-8 gap-y-10
-    max-w-[1000px]
-  "
+    max-w-[700px]
+    "
 >
 
     {/* ACADEMICS */}
@@ -114,7 +114,7 @@ export default async function ResourcesPage() {
       "
     >
       <a
-        href="/resources/jobs"
+        href="/resources/career"
         className="block h-full no-underline text-inherit"
       >
 <div
@@ -187,51 +187,7 @@ export default async function ResourcesPage() {
       </a>
     </Card>
 
-{/* Bottom row */}
-<div className="col-span-3 flex justify-center gap-8">
-  {/* INTERVIEWING */}
-  <Card
-    className="
-      w-[300px]
-      h-[300px]
-      bg-[var(--resource-tile)]
-      text-[var(--cream)]
-      rounded-[22px]
-      px-6 pt-7 pb-6
-      text-center
-      shadow-[0_10px_20px_rgba(0,0,0,0.15)]
-      cursor-pointer
-    "
-  >
-    <a
-      href="/resources/interviewing"
-      className="block h-full no-underline text-inherit"
-    >
-      <div
-        className="
-          mx-auto mb-4
-          flex h-34 w-34 items-center justify-center
-          rounded-full
-          bg-[var(--resource-circle)]
-        "
-      >
-        <img
-          src="/icons/interviewing.png"
-          alt="Interviewing"
-          className="h-[100px] w-[100px] object-contain block"
-        />
-      </div>
 
-      <h3 className="mt-1 mb-1.5 text-[var(--cream)] font-bold">
-        INTERVIEWING
-      </h3>
-
-      <p className="text-[var(--cream)] text-sm leading-[1.35]">
-        A guide to interview success, covering how to practice effectively,
-        communicate confidently, and make a lasting impression.
-      </p>
-    </a>
-  </Card>
 
   {/* ALUMNI ADVICE */}
   <Card
@@ -276,7 +232,6 @@ export default async function ResourcesPage() {
       </p>
     </a>
   </Card>
-</div>
 
 
   </section>

@@ -1,9 +1,19 @@
 ---
-title: "Jobs"
-writtenBy: "Sakib"
-published: "October 5, 2019"
-readTime: "12 min"
+title: "Career"
+type: "hub"
+sections:
+  - title: "Resume"
+    slug: "resume"
+  - title: "Applying"
+    slug: "applying"
+  - title: "Interviewing"
+    slug: "interviewing"
+  - title: "Personal Projects"
+    slug: "personalprojects"
+  - title: "Networking"
+    slug: "networking"
 ---
+
 ## Build up your tech skills: resource dump
 * [Developer Roadmaps](https://roadmap.sh/) - I used this to figure out what technologies my mentees and I should learn and what paths we should take.
 * [Sakib’s Internship Guide](https://pastebin.com/wq2kc0a2) - I wrote this a while ago for my mentees when they were freshmen/sophomores. Covers a four-point plan to build you up: CTCI, Linux, AppDev, Website.
