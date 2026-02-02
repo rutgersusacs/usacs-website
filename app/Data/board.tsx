@@ -26,18 +26,6 @@ export const EXEC_BOARD: BoardMember[] = [
     isGod: true,
   },
   {
-    name: "Aditi Parekh",
-    position: "Co-President",
-    major: "CS",
-    minor: "Critical Intelligence Studies",
-    description1:
-      "Aditi Parekh is a senior majoring in Computer Science with a minor in Critical Intelligence Studies, currently serving as the Co-President of USACS. Now in her second year on the board, Aditi is passionate about creating engaging events and fostering a strong community.",
-    description2:
-      "Outside of USACS, she enjoys watching Netflix, following tennis and the NFL, and connecting with peers at socials. Her favorite USACS events include the Mock Interview workshop and the ever-popular Boba Social. Aditi is especially interested in pursuing a career in Data Science and AI/ML.",
-    imageSrc: "profiles/aditi-r.png",
-    isGod: true,
-  },
-  {
     name: "Ishita Gabhane",
     position: "Vice President & Road to SWE Co-Director",
     major: "CS & Data Science",

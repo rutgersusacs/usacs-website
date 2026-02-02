@@ -18,29 +18,3 @@
 }
 
 /*confirm whether useful or not later */
-@layer components {
-  .profileCard {
-    @apply flex w-[410px] h-[570px] rounded-[3rem] m-8;
-  }
-  .topSection {
-    @apply flex items-start mt-8 mx-6 gap-6;
-  }
-  .profilePicture {
-    @apply w-36 h-36 rounded-full object-cover;
-  }
-  .bio {
-    @apply flex flex-col;
-  }
-  .bioName {
-    @apply text-2xl font-bold;
-  }
-  .bioPosition {
-    @apply mt-1 text-base font-medium;
-  }
-  .bioMajorDiv {
-    @apply flex flex-col mt-1 text-base font-bold;
-  }
-  .description {
-    @apply mt-6 mx-8 leading-relaxed space-y-3 text-[clamp()];
-  }
-}

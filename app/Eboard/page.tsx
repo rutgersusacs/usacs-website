@@ -16,9 +16,11 @@ const Eboard = () => {
         </div>
       </PageHeader>
 
-      <div className="grid grid-cols-3 gap-6 p-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-12 py-10 justify-items-center">
         {BOARD.map((member) => (
-          <Card key={member.name} {...member} />
+          <div key={member.name}>
+            <Card {...member} />
+          </div>
         ))}
       </div>
     </div>
