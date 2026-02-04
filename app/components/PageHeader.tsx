@@ -16,6 +16,7 @@ export default function PageHeader({
         pt-4 pb-20
         px-4
         rounded-b-[40px]
+        relative
         ${className}
       `}
     >
