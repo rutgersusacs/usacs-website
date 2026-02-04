@@ -25,7 +25,7 @@ const Card = ({
 
   return (
     <div
-      className={`flex w-full max-w-[410px] h-[570px] rounded-[3rem]`}
+      className={`flex w-full max-w-[410px] aspect-[410/570] rounded-[3rem] text-left`}
       style={{ backgroundColor: bgColor }}
     >
       <div className="flex flex-col">
@@ -38,7 +38,10 @@ const Card = ({
           />
 
           <div className="flex flex-col">
-            <h1 className={`text-2xl font-bold`} style={{ color: fontColor }}>
+            <h1
+              className={`lg:text-2xl font-bold md:text-xl`}
+              style={{ color: fontColor }}
+            >
               {name}
             </h1>
             <p
@@ -69,10 +72,7 @@ const Card = ({
 
         {/* Description */}
         <div
-          className={
-            "mt-6 mx-8 leading-relaxed space-y-3 text-[clamp()] " +
-            descriptionSize
-          }
+          className={"mt-6 mx-8 leading-relaxed space-y-3 " + descriptionSize}
           style={{ color: fontColor }}
         >
           <p>{description1}</p>
