@@ -49,10 +49,10 @@ export default async function ResourcesPage() {
     mx-auto
     mt-10 mb-14
     grid
-    grid-cols-3
+    grid-cols-2
     gap-x-8 gap-y-10
-    max-w-[1000px]
-  "
+    max-w-[700px]
+    "
 >
 
     {/* ACADEMICS */}
@@ -114,7 +114,7 @@ export default async function ResourcesPage() {
       "
     >
       <a
-        href="/resources/jobs"
+        href="/resources/career"
         className="block h-full no-underline text-inherit"
       >
 <div
@@ -187,51 +187,7 @@ export default async function ResourcesPage() {
       </a>
     </Card>
 
-{/* Bottom row */}
-<div className="col-span-3 flex justify-center gap-8">
-  {/* INTERVIEWING */}
-  <Card
-    className="
-      w-[300px]
-      h-[300px]
-      bg-[var(--resource-tile)]
-      text-[var(--cream)]
-      rounded-[22px]
-      px-6 pt-7 pb-6
-      text-center
-      shadow-[0_10px_20px_rgba(0,0,0,0.15)]
-      cursor-pointer
-    "
-  >
-    <a
-      href="/resources/interviewing"
-      className="block h-full no-underline text-inherit"
-    >
-      <div
-        className="
-          mx-auto mb-4
-          flex h-34 w-34 items-center justify-center
-          rounded-full
-          bg-[var(--resource-circle)]
-        "
-      >
-        <img
-          src="/icons/interviewing.png"
-          alt="Interviewing"
-          className="h-[100px] w-[100px] object-contain block"
-        />
-      </div>
 
-      <h3 className="mt-1 mb-1.5 text-[var(--cream)] font-bold">
-        INTERVIEWING
-      </h3>
-
-      <p className="text-[var(--cream)] text-sm leading-[1.35]">
-        A guide to interview success, covering how to practice effectively,
-        communicate confidently, and make a lasting impression.
-      </p>
-    </a>
-  </Card>
 
   {/* ALUMNI ADVICE */}
   <Card
@@ -276,7 +232,6 @@ export default async function ResourcesPage() {
       </p>
     </a>
   </Card>
-</div>
 
 
   </section>
@@ -321,8 +276,8 @@ export default async function ResourcesPage() {
 
   {/* Text */}
   <div className="max-w-[520px]">
-    <h3 className="mb-4 text-xl font-bold text-[#87111D]">THE CSL</h3>
-    <p className="text-base leading-7 text-[#54412F]">
+    <h3 className="mb-4 text-3xl font-bold text-[#87111D]">THE CSL</h3>
+    <p className="text-xl leading-7 text-[#54412F]">
       The CSL (Coding & Social Lounge) is located on the second floor of the Hill
       Bigliani Room 252. Part of the Computer Science Instructional Labs, the CSL
       was designed to provide students their own atmosphere for collaboration
@@ -335,8 +290,8 @@ export default async function ResourcesPage() {
 <div className="grid grid-cols-2 items-start gap-20">
   {/* Text */}
   <div className="max-w-[520px]">
-    <h3 className="mb-4 text-xl font-bold text-[#87111D]">MELTDOWN LAB</h3>
-    <p className="text-base leading-7 text-[#54412F]">
+    <h3 className="mb-4 text-3xl font-bold text-[#87111D]">MELTDOWN LAB</h3>
+    <p className="text-xl leading-7 text-[#54412F]">
       Right next door to the CSL, the Meltdown Lab is stocked with Linux
       machines and whiteboards, perfect for late night cram sessions.
     </p>
@@ -365,8 +320,8 @@ export default async function ResourcesPage() {
 
   {/* Text */}
   <div className="max-w-[520px]">
-    <h3 className="mb-4 text-xl font-bold text-[#87111D]">HACKERSPACE</h3>
-    <p className="text-base leading-7 text-[#54412F]">
+    <h3 className="mb-4 text-3xl font-bold text-[#87111D]">HACKERSPACE</h3>
+    <p className="text-xl leading-7 text-[#54412F]">
       The Hack-R-space is located in Hill 120. The Hack-R-Space is a workshop
       for students to tinker and build. It offers access to an abundance of
       resources, including 3D printing, robotics, Oculus Rifts, and
@@ -379,8 +334,8 @@ export default async function ResourcesPage() {
 <div className="grid grid-cols-2 items-start gap-20">
   {/* Text */}
   <div className="max-w-[520px]">
-    <h3 className="mb-4 text-xl font-bold text-[#87111D]">MAKERSPACE</h3>
-    <p className="text-base leading-7 text-[#54412F]">
+    <h3 className="mb-4 text-3xl font-bold text-[#87111D]">MAKERSPACE</h3>
+    <p className="text-xl leading-7 text-[#54412F]">
       The Makerspace is designed for Rutgers affiliates of all experience
       levels to bring their ideas to life. Located near Livingston Campus,
       the Makerspace is a tech atelier for students to design and construct
