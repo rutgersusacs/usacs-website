@@ -1,4 +1,9 @@
-# General Principles
+---
+title: "General Principles"
+writtenBy: "Sakib"
+published: "October 5, 2019"
+readTime: "10 min"
+---
 
 ## Mental health, Impostor Syndrome, and Confidence
 First and foremost, take care of yourself and prioritize your personal mental and physical health above classes. Be the first or second person to give yourself a break. Mental health issues are rampant in college, and all of the following advice, and school in general, pale in comparison to what many people go through. Commuters have an entirely different set of struggles than on-campus residents. Check out Rutgers [health services](http://health.rutgers.edu/), get a therapist at CAPS, build a relationship with your professors/deans, adopt a skincare routine, shower every day, be physically active.

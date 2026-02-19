@@ -1,4 +1,10 @@
-# Academics
+---
+title: "Academics"
+category: "Academics"
+writtenBy: "Sakib"
+published: "October 5, 2019"
+readTime: "7 min"
+---
 
 
 ## Invest heavily in CS 111 (Intro) and CS 112 (Data Structures)
