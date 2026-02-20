@@ -1,3 +1,5 @@
+"use client";
+
 type CardProps = {
   name: string;
   position: string;
@@ -6,7 +8,7 @@ type CardProps = {
   description1: string;
   description2: string;
   imageSrc: string;
-  isGod: boolean; // fix variable name later
+  isCoPresident: boolean;
 };
 
 const Card = ({
@@ -17,11 +19,10 @@ const Card = ({
   description1,
   description2,
   imageSrc,
-  isGod,
+  isCoPresident,
 }: CardProps) => {
-  const bgColor = isGod ? "#481110" : "#E4D1C3"; // Red for isGod true, default otherwise
-  const fontColor = isGod ? "#fbf4e4" : "#54412F"; // White for isGod true, default otherwise
-  const descriptionSize = isGod ? "text-sm" : "text-base";
+  const bgColor = isCoPresident ? "#481110" : "#E4D1C3"; // Red for isCoPresident true, default otherwise
+  const fontColor = isCoPresident ? "#fbf4e4" : "#54412F"; // White for isCoPresident true, default otherwise
 
   return (
     <div
@@ -72,12 +73,27 @@ const Card = ({
 
         {/* Description */}
         <div
-          className={"mt-6 mx-8 leading-relaxed space-y-3 " + descriptionSize}
+          className={"m-6 space-y-3 overflow-y-auto cardScroll"}
           style={{ color: fontColor }}
         >
           <p>{description1}</p>
           <p>{description2}</p>
         </div>
+
+        <style jsx>{`
+          .cardScroll::-webkit-scrollbar {
+            width: 6px;
+          }
+
+          .cardScroll::-webkit-scrollbar-thumb {
+            background: ${fontColor};
+            border-radius: 999px;
+          }
+
+          .cardScroll::-webkit-scrollbar-track {
+            background: transparent;
+          }
+        `}</style>
       </div>
     </div>
   );

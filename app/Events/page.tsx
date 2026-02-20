@@ -1,7 +1,7 @@
 import PageHeader from "../components/PageHeader";
 import PageSubtitle from "../components/PageSubtitle";
 
-const Events = () => {
+const events = () => {
   return (
     <div className="eventsPage">
       <PageHeader>
@@ -34,4 +34,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default events;
