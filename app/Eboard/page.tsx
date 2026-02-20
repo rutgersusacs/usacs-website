@@ -2,7 +2,7 @@ import Card from "@/app/components/Card";
 import PageHeader from "../components/PageHeader";
 import { EXEC_BOARD, BOARD } from "../Data/board";
 
-const Eboard = () => {
+const eboard = () => {
   return (
     <div className="eboardPage">
       <PageHeader>
@@ -27,4 +27,4 @@ const Eboard = () => {
   );
 };
 
-export default Eboard;
+export default eboard;
