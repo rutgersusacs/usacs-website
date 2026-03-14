@@ -1,6 +1,6 @@
 import SectionWrapper from "../components/SectionWrapper";
 import PageHeader from "../components/PageHeader";
-import Card from "../components/Card";
+import Card from "../components/CardResource";
 import PageSubtitle from "../components/PageSubtitle";
 
 export default async function ResourcesPage() {

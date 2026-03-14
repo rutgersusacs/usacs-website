@@ -41,7 +41,8 @@ export default function InterviewingPage() {
           [&_a]:underline
           [&_a:hover]:text-blue-700
         "
-      >        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+      >        
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {content}
         </ReactMarkdown>
       </article>
