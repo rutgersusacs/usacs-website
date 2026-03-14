@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import PageHeader from "../components/PageHeader";
+import PageSubtitle from "../components/PageSubtitle";
 
 type Committee = {
   title: string;
@@ -16,28 +17,28 @@ const committees: Committee[] = [
     title: "Technology",
     subtitle: "Inspire and keep alive the\nspirit of hacking",
     bullets: ["Codestorms", "Tech Workshops"],
-    imageSrc: "/images/committee-technology.png",
+    imageSrc: "/icons/tech.svg",
     imageAlt: "Technology committee mascot",
   },
   {
     title: "Education",
     subtitle: "Promoting, mentorship,\nresearch, and learning",
     bullets: ["Mock Interviews", "Resume Workshops"],
-    imageSrc: "/images/committee-education.png",
+    imageSrc: "/icons/edu.svg",
     imageAlt: "Education committee mascot",
   },
   {
     title: "Community",
     subtitle: "Foster diverse, inclusive, and\nfriendly social spaces",
     bullets: ["Socials", "Paws & Professors"],
-    imageSrc: "/images/committee-community.png",
+    imageSrc: "/icons/community.svg",
     imageAlt: "Community committee mascots",
   },
   {
     title: "Outreach",
     subtitle: "Build relationships with youth,\nalumni, and tech companies",
     bullets: ["Company Events", "Alumni Networking"],
-    imageSrc: "/images/committee-outreach.png",
+    imageSrc: "/icons/outreach.svg",
     imageAlt: "Outreach committee mascot",
   },
 ];
@@ -53,18 +54,18 @@ function CommitteeCard({ item }: { item: Committee }) {
         {item.subtitle}
       </p>
 
-      <div className="mt-5 flex justify-center">
+      <div className="mt-5 mb-3 flex justify-center">
         <Image
           src={item.imageSrc}
           alt={item.imageAlt}
-          width={160}
-          height={160}
-          className="h-[120px] w-[120px] object-contain sm:h-[135px] sm:w-[135px]"
+          width={180}
+          height={180}
+          className="object-contain"
           priority
         />
       </div>
 
-      <ul className="mt-5 space-y-2 text-sm text-white">
+      <ul className="mt-auto space-y-2 text-sm text-white">
         {item.bullets.map((b) => (
           <li key={b} className="flex items-start gap-2">
             <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-white/90" />
@@ -85,11 +86,14 @@ export default function MissionPage() {
           OUR MISSION
         </h1>
 
-        <div className="mx-auto mt-8 max-w-4xl rounded-full bg-[#6F1515]/80 px-6 py-4">
-          <p className="text-center text-xs font-semibold tracking-wide text-white sm:text-sm">
-            USACS’ VISION IS TO KEEP THE RUTGERS CS/TECH COMMUNITY THRIVING.
-          </p>
-        </div>
+        <PageSubtitle className="py-7 text-center text-2xl tracking-wide text-white">
+          <span className="font-light">USACS’ </span>
+          <span>VISION</span>
+          <span className="font-light">
+            {" "}
+            IS TO KEEP THE RUTGERS CS/TECH COMMUNITY THRIVING.
+          </span>
+        </PageSubtitle>
 
         <h2 className="mt-14 text-center text-[clamp(2rem,5vw,3.25rem)] font-extrabold tracking-wide text-white">
           COMMITTEES
@@ -108,16 +112,18 @@ export default function MissionPage() {
       </section>
 
       {/* ===== METHODS ===== */}
-      <section className="mx-auto max-w-6xl px-4 pb-14 pt-16">
-        <div className="grid items-center gap-10 lg:grid-cols-2">
-          <div>
+      <section className="pb-14 pt-16">
+        <div className="grid items-center gap-5 lg:grid-cols-2">
+          <div className="ml-20">
             <h3 className="text-4xl font-extrabold tracking-wide text-[#5A1A1A] sm:text-5xl">
               METHODS
             </h3>
 
             <div className="mt-6 space-y-2 text-sm leading-relaxed text-[#2B2B2B] sm:text-base">
               <p>Host quality-assured technical talks on a weekly basis.</p>
-              <p>Provide platforms for career development and project sharing.</p>
+              <p>
+                Provide platforms for career development and project sharing.
+              </p>
               <p>Initiate and oversee mentorship program for undergraduates.</p>
               <p>
                 Promote undergraduate research and faculty involvement through
@@ -129,9 +135,7 @@ export default function MissionPage() {
                 Build framework to connect alumni with community after
                 graduation.
               </p>
-              <p>
-                Coordinate tech company recruitment and outreach efforts.
-              </p>
+              <p>Coordinate tech company recruitment and outreach efforts.</p>
               <p>
                 Connect students with mentorship opportunities targeting youth.
               </p>
@@ -143,9 +147,9 @@ export default function MissionPage() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="relative h-[260px] w-full max-w-[520px] overflow-hidden rounded-l-[180px] rounded-r-[32px] bg-white shadow-sm sm:h-[320px]">
+            <div className="relative h-[260px] w-full max-w-[600px] overflow-hidden rounded-l-[180px] bg-white shadow-sm sm:h-[320px]">
               <Image
-                src="/images/mission-methods.jpg"
+                src="/icons/1.png"
                 alt="USACS members in a meetup"
                 fill
                 className="object-cover"
@@ -157,12 +161,12 @@ export default function MissionPage() {
       </section>
 
       {/* ===== MEASURES ===== */}
-      <section className="mx-auto max-w-6xl px-4 pb-20">
+      <section className="pb-20">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div className="flex justify-center lg:justify-start">
-            <div className="relative h-[260px] w-full max-w-[520px] overflow-hidden rounded-r-[180px] rounded-l-[32px] bg-white shadow-sm sm:h-[320px]">
+            <div className="relative h-[260px] w-full max-w-[600px] overflow-hidden rounded-r-[180px] bg-white shadow-sm sm:h-[320px]">
               <Image
-                src="/images/mission-measures.jpg"
+                src="/icons/2.png"
                 alt="USACS classroom and whiteboard"
                 fill
                 className="object-cover"
@@ -171,24 +175,26 @@ export default function MissionPage() {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-4xl font-extrabold tracking-wide text-[#5A1A1A] sm:text-5xl">
-              MEASURES
-            </h3>
+          <div className="flex justify-end mr-20">
+            <div>
+              <h3 className="text-4xl font-extrabold tracking-wide text-[#5A1A1A] sm:text-5xl">
+                MEASURES
+              </h3>
 
-            <div className="mt-6 space-y-5 text-sm leading-relaxed text-[#2B2B2B] sm:text-base">
-              <p>
-                Students feeling comfortable in and growing from our events,
-                spaces, and programs.
-              </p>
-              <p>
-                Other communities, departments, and universities knowing how
-                awesome we are.
-              </p>
-              <p>
-                Public visibility for our community’s projects and endeavors
-                while keeping diverse.
-              </p>
+              <div className="mt-6 space-y-5 text-sm leading-relaxed text-[#2B2B2B] sm:text-base">
+                <p>
+                  Students feeling comfortable in and growing from our events,
+                  spaces, and programs.
+                </p>
+                <p>
+                  Other communities, departments, and universities knowing how
+                  awesome we are.
+                </p>
+                <p>
+                  Public visibility for our community’s projects and endeavors
+                  while keeping diverse.
+                </p>
+              </div>
             </div>
           </div>
         </div>
