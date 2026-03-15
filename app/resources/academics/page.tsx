@@ -10,7 +10,7 @@ export default async function AcademicsPage() {
     process.cwd(),
     "content",
     "academics",
-    "academics.md"
+    "academics.md",
   );
 
   const raw = fs.readFileSync(filePath, "utf8");
