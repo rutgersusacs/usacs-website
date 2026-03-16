@@ -10,7 +10,7 @@ export default function InterviewingPage() {
     process.cwd(),
     "content",
     "career",
-    "interviewing.md"
+    "interviewing.md",
   );
 
   const raw = fs.readFileSync(filePath, "utf8");
@@ -19,11 +19,17 @@ export default function InterviewingPage() {
   return (
     <div className="max-w-[900px] mx-auto py-10 px-6">
       <nav className="mb-4 text-sm text-black/60">
-        <Link href="/" className="hover:underline">Home</Link>
+        <Link href="/" className="hover:underline">
+          Home
+        </Link>
         <span className="mx-2">/</span>
-        <Link href="/resources" className="hover:underline">Resources</Link>
+        <Link href="/resources" className="hover:underline">
+          Resources
+        </Link>
         <span className="mx-2">/</span>
-        <Link href="/resources/career" className="hover:underline">Career</Link>
+        <Link href="/resources/career" className="hover:underline">
+          Career
+        </Link>
         <span className="mx-2">/</span>
         <span className="text-black/80">{data.title}</span>
       </nav>
@@ -41,9 +47,8 @@ export default function InterviewingPage() {
           [&_a]:underline
           [&_a:hover]:text-blue-700
         "
-      >        <ReactMarkdown remarkPlugins={[remarkGfm]}>
-          {content}
-        </ReactMarkdown>
+      >
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
       </article>
     </div>
   );
