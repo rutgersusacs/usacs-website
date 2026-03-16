@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PageHeader from "../components/PageHeader";
+import PageSubtitle from "../components/PageSubtitle";
 
 export default function DonatePage() {
   return (
@@ -11,12 +12,12 @@ export default function DonatePage() {
         </h1>
 
         {/* THANK YOU BAR */}
-        <div className="mx-auto mt-10 max-w-6xl rounded-full bg-[#6F1515]/70 px-10 py-6">
-          <p className="text-center text-sm font-semibold tracking-wide text-white sm:text-base">
+        <PageSubtitle className="py-7">
+          <span className="text-white text-[clamp(1rem,2vw,1.375rem)] tracking-wide">
             THANK YOU FOR DONATING TO THE RUTGERS UNDERGRADUATE COMPUTER SCIENCE
             COMMUNITY!
-          </p>
-        </div>
+          </span>
+        </PageSubtitle>
       </PageHeader>
 
       {/* HEADING CARD */}
@@ -52,8 +53,8 @@ export default function DonatePage() {
             amount to be donated.
           </li>
           <li>
-            Next to “If you&apos;ve selected the &quot;other, please specify&quot;
-            option, please specify the fund:” type “USACS”
+            Next to “If you&apos;ve selected the &quot;other, please
+            specify&quot; option, please specify the fund:” type “USACS”
           </li>
           <li>
             Fill out the rest of the form including whether or not donation is
