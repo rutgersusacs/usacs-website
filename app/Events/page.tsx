@@ -19,17 +19,16 @@ const events = () => {
 
         <div className="h-[140px]" />
 
-        <div className="w-full max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-xl bg-[#E4D1C3] absolute left-1/2 top-[73%] -translate-x-1/2 p-6 z-10">
+        <div className="w-[90%] max-w-6xl rounded-3xl overflow-hidden shadow-xl bg-[#E4D1C3] absolute left-1/2 top-[73%] -translate-x-1/2 p-6">
           <iframe
             src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=America/New_York"
-            className="w-full h-[600px] rounded-3xl"
+            className="w-full sh-[600px] rounded-3xl"
             frameBorder="0"
             scrolling="no"
           />
         </div>
       </PageHeader>
-
-      <div className="h-[470px]" />
+      <div className="m-150" />
     </div>
   );
 };
