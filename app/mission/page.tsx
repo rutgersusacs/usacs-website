@@ -115,7 +115,7 @@ export default function MissionPage() {
       <section className="pb-14 pt-16">
         <div className="grid items-center gap-5 lg:grid-cols-2">
           <div className="ml-20">
-            <h3 className="text-4xl font-extrabold tracking-wide text-[#5A1A1A] sm:text-5xl">
+            <h3 className="text-4xl font-extrabold tracking-wide text-[#5A1A1A] sm:text-5xl ">
               METHODS
             </h3>
 
@@ -162,38 +162,42 @@ export default function MissionPage() {
 
       {/* ===== MEASURES ===== */}
       <section className="pb-20">
-        <div className="grid items-center gap-10 lg:grid-cols-2">
-          <div className="flex justify-center lg:justify-start">
-            <div className="relative h-[260px] w-full max-w-[600px] overflow-hidden rounded-r-[180px] bg-white shadow-sm sm:h-[320px]">
-              <Image
-                src="/icons/2.png"
-                alt="USACS classroom and whiteboard"
-                fill
-                className="object-cover"
-                priority
-              />
+        <div className=" px-0 lg:px-0">
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            {/* TEXT (top on mobile, right on desktop) */}
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end mr-20">
+              <div className="max-w-md lg:text-left">
+                <h3 className="text-4xl font-extrabold tracking-wide text-[#5A1A1A] sm:text-5xl">
+                  MEASURES
+                </h3>
+
+                <div className="mt-6 space-y-5 text-sm leading-relaxed text-[#2B2B2B] sm:text-base">
+                  <p>
+                    Students feeling comfortable in and growing from our events,
+                    spaces, and programs.
+                  </p>
+                  <p>
+                    Other communities, departments, and universities knowing how
+                    awesome we are.
+                  </p>
+                  <p>
+                    Public visibility for our community’s projects and endeavors
+                    while keeping diverse.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div className="flex justify-end mr-20">
-            <div>
-              <h3 className="text-4xl font-extrabold tracking-wide text-[#5A1A1A] sm:text-5xl">
-                MEASURES
-              </h3>
-
-              <div className="mt-6 space-y-5 text-sm leading-relaxed text-[#2B2B2B] sm:text-base">
-                <p>
-                  Students feeling comfortable in and growing from our events,
-                  spaces, and programs.
-                </p>
-                <p>
-                  Other communities, departments, and universities knowing how
-                  awesome we are.
-                </p>
-                <p>
-                  Public visibility for our community’s projects and endeavors
-                  while keeping diverse.
-                </p>
+            {/* IMAGE (bottom on mobile, left on desktop) */}
+            <div className="order-2 lg:order-1 flex justify-start">
+              <div className="relative h-[260px] w-full max-w-[600px] overflow-hidden rounded-r-[180px] bg-white shadow-sm sm:h-[320px]">
+                <Image
+                  src="/icons/2.png"
+                  alt="USACS classroom and whiteboard"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>

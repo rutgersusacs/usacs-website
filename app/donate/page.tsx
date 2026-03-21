@@ -67,9 +67,9 @@ export default function DonatePage() {
       {/* IMAGES */}
       <div className="mx-auto mt-14 max-w-6xl px-4 pb-20">
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="overflow-hidden rounded-3xl bg-white shadow-sm">
+          <div className="overflow-hidden rounded-4xl bg-white shadow-sm">
             <Image
-              src="/images/donate-left.jpg"
+              src="/icons/donate_dog.png"
               alt="USACS community event"
               width={900}
               height={600}
@@ -78,9 +78,9 @@ export default function DonatePage() {
             />
           </div>
 
-          <div className="overflow-hidden rounded-3xl bg-white shadow-sm">
+          <div className="overflow-hidden rounded-4xl bg-white shadow-sm">
             <Image
-              src="/images/donate-right.jpg"
+              src="/icons/donate_dog.png"
               alt="USACS student collaboration"
               width={900}
               height={600}
