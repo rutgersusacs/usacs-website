@@ -21,7 +21,7 @@ const events = () => {
 
         <div className="w-[90%] max-w-6xl rounded-3xl overflow-hidden shadow-xl bg-[#E4D1C3] absolute left-1/2 top-[73%] -translate-x-1/2 p-6">
           <iframe
-            src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=America/New_York"
+            src="https://calendar.google.com/calendar/embed?src=923a9274ef4f95a6740bf40750c60b8b6f5108141aca6b488d5639eee61d131e%40group.calendar.google.com&ctz=America%2FNew_York"
             className="w-full h-[600px] rounded-3xl"
             frameBorder="0"
             scrolling="no"
