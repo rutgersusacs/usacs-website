@@ -24,6 +24,14 @@ sections:
 - Resume/LinkedIn - When you’re a freshman, you won’t have nearly as much
   as experience as upperclassmen or privileged folk who were hand-held in tech earlier in life, and that’s okay. There’s internship programs that specifically [cater to newbies](https://www.wellesley.edu/careereducation/resources/technology-internships-first-years-and-sophomores) and [underclassmen](https://simplify.jobs/blog/25-software-engineering-programs-for-underclassmen/). But you should still start making your resume and set up your LinkedIn! Your mentors can answer your specific questions on bolding, spacing, active wording, highlighting numbers, etc. Here’s some templates to inspire you: [Popular LaTeX Resume](<[https://github.com/deedy/Deedy-Resume](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)>) or just Google free resume builders, they just ask you to input your information and they export PDFs for you.
 
+- [Developer Roadmaps](https://roadmap.sh/) - I used this to figure out what technologies my mentees and I should learn and what paths we should take.
+- [Sakib’s Internship Guide](https://pastebin.com/wq2kc0a2) - I wrote this a while ago for my mentees when they were freshmen/sophomores. Covers a four-point plan to build you up: CTCI, Linux, AppDev, Website.
+- [Ubuntu, Git, Python, Flask](https://pastebin.com/xwXsdwHW) - Some links I compiled because people kept asking me where to learn this stuff and how to dual-boot [Ubuntu](https://ubuntu.com).
+- [Leetcode](https://leetcode.com) and [CTCI](http://www.crackingthecodinginterview.com) are what I used to get decent at coding interviews. Leetcode has specific problem sets that highlight which questions are common for companies like FB, Google, Amazon, etc. Share an account with your friends.
+- [CLRS](https://www.cs.mcgill.ca/~akroit/math/compsci/Cormen%20Introduction%20to%20Algorithms.pdf) is the book to study or reference algorithms more advanced than those you learn in basic data structures. It’s often the textbook for Undergraduate Algorithms classes. Interviews won’t typically ask you questions of this kind until you’re a senior.
+- Resume/LinkedIn - When you’re a freshman, you won’t have nearly as much
+  as experience as upperclassmen or privileged folk who were hand-held in tech earlier in life, and that’s okay. There’s internship programs that specifically [cater to newbies](https://www.wellesley.edu/careereducation/resources/technology-internships-first-years-and-sophomores) and [underclassmen](https://simplify.jobs/blog/25-software-engineering-programs-for-underclassmen/). But you should still start making your resume and set up your LinkedIn! Your mentors can answer your specific questions on bolding, spacing, active wording, highlighting numbers, etc. Here’s some templates to inspire you: [Popular LaTeX Resume](<[https://github.com/deedy/Deedy-Resume](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)>) or just Google free resume builders, they just ask you to input your information and they export PDFs for you.
+
 ## Companies optimize against false positives, not against false negatives
 
 Hiring you is a big risk. Not because it’s you, but objectively, hiring full-time employees and even interns is extremely expensive. From a company’s perspective, it’s much better to accidentally not-hire a good candidate than it is to hire a bad candidate. That’s why the Tech Interview process is the way it is: asking random data structures and algorithms questions seems unfair and [RNG-based](https://www.urbandictionary.com/define.php?term=RNG) from a candidate’s perspective, but from a company’s perspective, it works pretty well at separating A-players from B- and C-players. The best you can do as a candidate is again, use all the time you have to prepare for all the types of questions they can throw at you. Work with your mentors, and keep a tight calendar to figure out how to balance this with acing all your classes.
@@ -41,6 +49,11 @@ Say you’re lead hiring manager for Google and you receive millions of applicat
 - Phone Interviews: The recruiter will ask you to schedule time for 2-3 interviews, which are usually coding-style interviews that are designed to extract signal regarding how strong your problem-solving skills are and how you respond to scenarios/questions you’ve never seen before. They’ll schedule one at a time and more if they need stronger signal from you. Depending on the company, over half of candidates are filtered out here.
 - Offer: If most of your interviewers returned with a strong signal for “hire”, you’re likely to receive an offer! Depending on the company, over half of candidates accept their offer. Exceptions include Google, because you can get an offer but still need to be host-matched to a team, and most positions on different teams may already be filled up depending on how late you apply.
 - Hire: You’ve been hired! Don’t renege on offers you’ve signed: this is how you burn bridges or get blacklisted, and word travels fast in recruiting communities (which are cross-company).
+- Sourcing: [read this](https://www.talentful.com/wp-content/uploads/2022/09/How_To_Secure_The_Worlds_Top_Tech_Talent_2022_UK.pdf) Technical sourcers search for talent. It’s easier to discover you if you have a strong Internet presence, which includes having solid, up-to-date resume, Github, LinkedIn, personal site, and Google search presence.
+- Screening: A recruiter’s life is hard! Sometimes, this involves the recruiter calling you to ask you basic questions about Linux or Java, or sending you an online assessment. Depending on the company, a majority of candidates are filtered out here.
+- Phone Interviews: The recruiter will ask you to schedule time for 2-3 interviews, which are usually coding-style interviews that are designed to extract signal regarding how strong your problem-solving skills are and how you respond to scenarios/questions you’ve never seen before. They’ll schedule one at a time and more if they need stronger signal from you. Depending on the company, over half of candidates are filtered out here.
+- Offer: If most of your interviewers returned with a strong signal for “hire”, you’re likely to receive an offer! Depending on the company, over half of candidates accept their offer. Exceptions include Google, because you can get an offer but still need to be host-matched to a team, and most positions on different teams may already be filled up depending on how late you apply.
+- Hire: You’ve been hired! Don’t renege on offers you’ve signed: this is how you burn bridges or get blacklisted, and word travels fast in recruiting communities (which are cross-company).
 
 ## Getting tech internships
 
@@ -49,6 +62,8 @@ Look to use every summer you have to get as much work experience as possible and
 Job Application Season™ is stressful. It’s like a part-time job while you’re juggling your academics and extracurriculars, so plan your schedules and involvements accordingly prior to Fall semester. But, like other things, you can and will succeed when you pour time and energy into it, leverage your support network, and get help from the right people. If you’re a freshman or sophomore, don’t worry too much - you’ll get there, and junior year internships are the most important ones anyway.
 
 ## Resources to ace your interviews
+
+First, read this [technical interview handbook](<[https://triplebyte.com/blog/how-to-pass-a-programming-interview](https://www.techinterviewhandbook.org/coding-interview-prep/)>), made by an ex-Meta Staff Engineer.
 
 First, read this [technical interview handbook](<[https://triplebyte.com/blog/how-to-pass-a-programming-interview](https://www.techinterviewhandbook.org/coding-interview-prep/)>), made by an ex-Meta Staff Engineer.
 
@@ -69,6 +84,7 @@ That said, if you’re having a bad experience, make it known. If your intern ma
 Top tier companies hire people who shine in and out of academics, and your courses by themselves won’t teach you most things relevant in industry today. Although they’ll give you a great foundation, undergraduate studies are a pipeline for future graduate researchers. If you just want a job, then focus on things outside of class. As V said, your professors haven’t coded in decades, since academia rewards very different skills and traits than industry.
 
 Go to career fairs and shoot your shot with companies. If you’re a woman in CS, look for scholarships and go to conferences like Grace Hopper that are designed to empower minorities in tech. Go to as [many hackathons](<[https://mlh.io/seasons/na-2020/events](https://mlh.io/seasons/2026/events)>) as you’re comfortable with, since hackathons are basically a special kind of career fair. Go to USACS’ Hacker Hours or similar workshop-like events, stay after and learn more from regulars and upperclassmen. This sounds like a lot, because it is, so I will re-emphasize a previous point: find a mentor to help guide you through this! It’s as easy as joining a mentorship program, or better yet do what I did: go up to someone who seems smart and nice, and say “hey would you be willing to be my mentor and teach me stuff?” - it works.
+Go to career fairs and shoot your shot with companies. If you’re a woman in CS, look for scholarships and go to conferences like Grace Hopper that are designed to empower minorities in tech. Go to as [many hackathons](<[https://mlh.io/seasons/na-2020/events](https://mlh.io/seasons/2026/events)>) as you’re comfortable with, since hackathons are basically a special kind of career fair. Go to USACS’ Hacker Hours or similar workshop-like events, stay after and learn more from regulars and upperclassmen. This sounds like a lot, because it is, so I will re-emphasize a previous point: find a mentor to help guide you through this! It’s as easy as joining a mentorship program, or better yet do what I did: go up to someone who seems smart and nice, and say “hey would you be willing to be my mentor and teach me stuff?” - it works.
 
 ## Explore positions besides Software Engineer
 
@@ -81,10 +97,20 @@ I’m a [Production Engineer](https://engineering.fb.com/category/production-eng
 - [YCombinator](https://www.ycombinator.com/subscribe/)
 - [VC Newsletters](https://medium.com/@etiennebr/my-top-9-newsletters-if-you-want-to-be-up-to-date-on-the-vc-technology-industry-e195c74a72a2)
 
+- [USACS](http://usacs.rutgers.edu/)
+- [Princeton e-club](https://www.princetoneclub.com/#About-Section)
+- [tech:NYC](https://www.technyc.org/newsletter)
+- [Startup Digests](https://www.startupdigest.com/digests)
+- [YCombinator](https://www.ycombinator.com/subscribe/)
+- [VC Newsletters](https://medium.com/@etiennebr/my-top-9-newsletters-if-you-want-to-be-up-to-date-on-the-vc-technology-industry-e195c74a72a2)
+
 ## Engage yourself in communities outside of Rutgers
 
 I shouldn’t have to explain why this is important to your own personal growth. Here are some ideas:
 
+- Make a [Github](https://github.com/join) and build your own website as a first step. You can do this at a hackathon. It’s like creating your own place on the Internet, and you decide what it is, a blog, a resume/marketing thing, etc. It’s a good way to start putting yourself out there.
+- Get engaged with [civic hacking](https://govfresh.com/thoughts/civic-hacking) since tech can be used for a ton of social good! For example, in my hackNY summer, we worked with the Human Trafficking Response Unit of NYC to build systems to help their analysts track down traffickers.
+- Apply to fellowships like [hackNY](https://apply.hackny.org) and work on building your network of like-minded friends. I love this community and everyone in it.
 - Make a [Github](https://github.com/join) and build your own website as a first step. You can do this at a hackathon. It’s like creating your own place on the Internet, and you decide what it is, a blog, a resume/marketing thing, etc. It’s a good way to start putting yourself out there.
 - Get engaged with [civic hacking](https://govfresh.com/thoughts/civic-hacking) since tech can be used for a ton of social good! For example, in my hackNY summer, we worked with the Human Trafficking Response Unit of NYC to build systems to help their analysts track down traffickers.
 - Apply to fellowships like [hackNY](https://apply.hackny.org) and work on building your network of like-minded friends. I love this community and everyone in it.

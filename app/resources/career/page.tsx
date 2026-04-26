@@ -5,40 +5,64 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+// Each tile shown on the Career page (ex: Resume, Applying, etc)
+// slug is the part of the URL and matches the markdown file name
+// ex: slug "resume" → goes to /resources/career/resume → loads resume.md
 type CareerSection = {
   title: string;
   slug: string;
 };
 
+// Defines the data at the top of career.md
+// - title: page title
+// - sections: list of tiles to display on this page
 type CareerFrontmatter = {
   title: string;
   sections: CareerSection[];
 };
 
 export default async function CareerPage() {
+  // Path to the main career markdown file
+  // This file controls both the tiles and the text content below them
   const filePath = path.join(process.cwd(), "content", "career", "career.md");
   const raw = fs.readFileSync(filePath, "utf8");
 
+  // Split the markdown file into:
+  // - data: the frontmatter (title + sections for tiles)
+  // - content: the main written content (paragraphs, lists, etc)
   const { data, content } = matter(raw);
   const frontmatter = data as CareerFrontmatter;
 
   return (
     <div className="max-w-[900px] mx-auto py-10 px-6">
-
-      {/* Breadcrumb */}
+      {/* Breadcrumb navigation showing where the user is */}
       <nav className="mb-4 text-sm text-black/60">
-        <Link href="/" className="hover:underline">Home</Link>
+        <Link href="/" className="hover:underline">
+          Home
+        </Link>
         <span className="mx-2">/</span>
-        <Link href="/resources" className="hover:underline">Resources</Link>
+        <Link href="/resources" className="hover:underline">
+          Resources
+        </Link>
         <span className="mx-2">/</span>
         <span className="text-black/80">Career</span>
       </nav>
 
-      {/* Title */}
+      {/* Page title from career.md */}
       <h1 className="text-4xl font-bold mb-12">{frontmatter.title}</h1>
 
       {/* Career tiles */}
+      {/* These are generated from the "sections" list in career.md */}
+      {/* Each tile links to a page using its slug */}
+      {/* Example: slug "resume" → links to /resources/career/resume and matches resume.md */}
+
+      {/* To add a new tile:
+          1. Add a new item in the sections list in career.md (title + slug)
+          2. Create a markdown file in content/career with the same slug name
+            Example: slug "portfolio" should have portfolio.md
+    */}
       <section className="grid grid-cols-3 gap-8">
+        {/* First 3 tiles shown in the top row */}
         {frontmatter.sections.slice(0, 3).map((section) => (
           <Link
             key={section.slug}
@@ -57,6 +81,7 @@ export default async function CareerPage() {
           </Link>
         ))}
 
+        {/* Remaining tiles shown centered on the second row */}
         <div className="col-span-3 flex justify-center gap-8">
           {frontmatter.sections.slice(3).map((section) => (
             <Link
@@ -79,7 +104,8 @@ export default async function CareerPage() {
         </div>
       </section>
 
-      {/* Long-form career content */}
+      {/* Main written content below the tiles */}
+      {/* This comes from the body of career.md (paragraphs, lists, etc) */}
       <article
         className="
           prose prose-neutral max-w-none mt-16
@@ -114,11 +140,10 @@ export default async function CareerPage() {
           [&_hr]:my-8
         "
       >
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>
-          {content}
-        </ReactMarkdown>
+        {/* Converts markdown into formatted content */}
+        {/* Enables support for tables, lists, and other markdown features */}
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
       </article>
-
     </div>
   );
 }

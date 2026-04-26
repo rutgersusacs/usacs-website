@@ -5,31 +5,45 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
 
+// Career subpage (Interviewing section)
+// Each career topic is stored as a markdown file and rendered on its own page
+
 export default function InterviewingPage() {
+  // Path to the interviewing markdown file
   const filePath = path.join(
     process.cwd(),
     "content",
     "career",
-    "interviewing.md"
+    "interviewing.md",
   );
 
+  // Read file and extract metadata (data) and content
   const raw = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(raw);
 
   return (
     <div className="max-w-[900px] mx-auto py-10 px-6">
+      {/* Breadcrumb navigation for Resources → Career → Interviewing */}
       <nav className="mb-4 text-sm text-black/60">
-        <Link href="/" className="hover:underline">Home</Link>
+        <Link href="/" className="hover:underline">
+          Home
+        </Link>
         <span className="mx-2">/</span>
-        <Link href="/resources" className="hover:underline">Resources</Link>
+        <Link href="/resources" className="hover:underline">
+          Resources
+        </Link>
         <span className="mx-2">/</span>
-        <Link href="/resources/career" className="hover:underline">Career</Link>
+        <Link href="/resources/career" className="hover:underline">
+          Career
+        </Link>
         <span className="mx-2">/</span>
         <span className="text-black/80">{data.title}</span>
       </nav>
 
+      {/* Page title from markdown frontmatter */}
       <h1 className="text-4xl font-bold mb-8">{data.title}</h1>
 
+      {/* Styled container for markdown content */}
       <article
         className="
           prose prose-neutral max-w-none
@@ -41,10 +55,10 @@ export default function InterviewingPage() {
           [&_a]:underline
           [&_a:hover]:text-blue-700
         "
-      >        
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-          {content}
-        </ReactMarkdown>
+      >
+        {/* Converts markdown into formatted content */}
+        {/* Enables support for tables, lists, and other markdown features */}
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
       </article>
     </div>
   );
