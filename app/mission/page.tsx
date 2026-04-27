@@ -1,9 +1,9 @@
-// app/mission/page.tsx
-
+// ===== IMPORTS =====
 import Image from "next/image";
 import PageHeader from "../components/PageHeader";
 import PageSubtitle from "../components/PageSubtitle";
 
+// ===== TYPES =====
 type Committee = {
   title: string;
   subtitle: string;
@@ -12,6 +12,7 @@ type Committee = {
   imageAlt: string;
 };
 
+// ===== DATA =====
 const committees: Committee[] = [
   {
     title: "Technology",
@@ -43,14 +44,21 @@ const committees: Committee[] = [
   },
 ];
 
+// ===== COMPONENT =====
 function CommitteeCard({ item }: { item: Committee }) {
   return (
-    <div className="flex h-full flex-col rounded-[28px] bg-[#7A1A1A] px-6 pb-6 pt-7 shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
+    <div
+      className="flex h-full flex-col rounded-[28px] bg-[#7A1A1A] px-6 pb-6 pt-7 shadow-[0_12px_30px_rgba(0,0,0,0.15)]"
+      /* vertical layout + consistent card sizing + custom shadow */
+    >
       <h3 className="text-center text-base font-extrabold tracking-wide text-white">
         {item.title}
       </h3>
 
-      <p className="mt-2 whitespace-pre-line text-center text-xs font-medium leading-snug text-white/90">
+      <p
+        className="mt-2 whitespace-pre-line text-center text-xs font-medium leading-snug text-white/90"
+        /* preserves \n line breaks + tighter text spacing */
+      >
         {item.subtitle}
       </p>
 
@@ -61,11 +69,13 @@ function CommitteeCard({ item }: { item: Committee }) {
           width={180}
           height={180}
           className="object-contain"
-          priority
         />
       </div>
 
-      <ul className="mt-auto space-y-2 text-sm text-white">
+      <ul
+        className="mt-auto space-y-2 text-sm text-white"
+        /* pushes bullets to bottom + evenly spaced list */
+      >
         {item.bullets.map((b) => (
           <li key={b} className="flex items-start gap-2">
             <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-white/90" />
@@ -77,12 +87,16 @@ function CommitteeCard({ item }: { item: Committee }) {
   );
 }
 
+// ===== PAGE =====
 export default function MissionPage() {
   return (
     <main className="min-h-screen bg-[#F7F0E6]">
-      {/* ===== HERO (RED) ===== */}
+      {/* ===== HERO ===== */}
       <PageHeader className="pb-40">
-        <h1 className="text-[clamp(3rem,8vw,6rem)] font-extrabold tracking-wide text-white">
+        <h1
+          className="text-[clamp(3rem,8vw,6rem)] font-extrabold tracking-wide text-white"
+          /* responsive scaling + strong visual emphasis */
+        >
           OUR MISSION
         </h1>
 
@@ -95,15 +109,24 @@ export default function MissionPage() {
           </span>
         </PageSubtitle>
 
-        <h2 className="mt-14 text-center text-[clamp(2rem,5vw,3.25rem)] font-extrabold tracking-wide text-white">
+        <h2
+          className="mt-14 text-center text-[clamp(2rem,5vw,3.25rem)] font-extrabold tracking-wide text-white"
+          /* secondary responsive heading */
+        >
           COMMITTEES
         </h2>
       </PageHeader>
 
-      {/* ===== COMMITTEES (OVERLAP SECTION) ===== */}
-      <section className="relative z-10 -mt-32">
+      {/* ===== COMMITTEES ===== */}
+      <section
+        className="relative z-10 -mt-32"
+        /* pulls cards upward to overlap hero + ensures proper stacking */
+      >
         <div className="mx-auto max-w-6xl px-4">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div
+            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+            /* responsive grid: 1 → 2 → 4 columns */
+          >
             {committees.map((c) => (
               <CommitteeCard key={c.title} item={c} />
             ))}
@@ -113,9 +136,15 @@ export default function MissionPage() {
 
       {/* ===== METHODS ===== */}
       <section className="pb-14 pt-16">
-        <div className="grid items-center gap-5 lg:grid-cols-2">
-          <div className="ml-20">
-            <h3 className="text-4xl font-extrabold tracking-wide text-[#5A1A1A] sm:text-5xl ">
+        <div
+          className="grid items-center gap-5 lg:grid-cols-2"
+          /* two-column layout on large screens */
+        >
+          <div
+            className="px-6 sm:px-10 lg:ml-20 lg:px-0 text-right lg:text-left"
+            /* right-aligned on mobile → left-aligned on desktop */
+          >
+            <h3 className="text-4xl font-extrabold tracking-wide text-[#5A1A1A] sm:text-5xl">
               METHODS
             </h3>
 
@@ -147,13 +176,15 @@ export default function MissionPage() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="relative h-[260px] w-full max-w-[600px] overflow-hidden rounded-l-[180px] bg-white shadow-sm sm:h-[320px]">
+            <div
+              className="relative h-[260px] w-full max-w-[600px] overflow-hidden rounded-l-[180px] bg-white shadow-sm sm:h-[320px]"
+              /* responsive image container with curved left edge */
+            >
               <Image
                 src="/icons/1.png"
                 alt="USACS members in a meetup"
                 fill
                 className="object-cover"
-                priority
               />
             </div>
           </div>
@@ -162,10 +193,15 @@ export default function MissionPage() {
 
       {/* ===== MEASURES ===== */}
       <section className="pb-20">
-        <div className=" px-0 lg:px-0">
-          <div className="grid items-center gap-10 lg:grid-cols-2">
-            {/* TEXT (top on mobile, right on desktop) */}
-            <div className="order-1 lg:order-2 flex justify-center lg:justify-end mr-20">
+        <div>
+          <div
+            className="grid items-center gap-10 lg:grid-cols-2"
+            /* two-column layout with spacing */
+          >
+            <div
+              className="order-1 lg:order-2 flex justify-center lg:justify-end mr-20"
+              /* swaps order on desktop + aligns content right */
+            >
               <div className="max-w-md lg:text-left">
                 <h3 className="text-4xl font-extrabold tracking-wide text-[#5A1A1A] sm:text-5xl">
                   MEASURES
@@ -188,15 +224,16 @@ export default function MissionPage() {
               </div>
             </div>
 
-            {/* IMAGE (bottom on mobile, left on desktop) */}
             <div className="order-2 lg:order-1 flex justify-start">
-              <div className="relative h-[260px] w-full max-w-[600px] overflow-hidden rounded-r-[180px] bg-white shadow-sm sm:h-[320px]">
+              <div
+                className="relative h-[260px] w-full max-w-[600px] overflow-hidden rounded-r-[180px] bg-white shadow-sm sm:h-[320px]"
+                /* mirrored image style with curved right edge */
+              >
                 <Image
                   src="/icons/2.png"
                   alt="USACS classroom and whiteboard"
                   fill
                   className="object-cover"
-                  priority
                 />
               </div>
             </div>
