@@ -9,7 +9,12 @@ import remarkGfm from "remark-gfm";
 
 export default async function GeneralPage() {
   // Path to the general markdown file
-  const filePath = path.join(process.cwd(), "content", "general", "general.md");
+  const filePath = path.join(
+    process.cwd(),
+    "content",
+    "general",
+    "general-principles.md",
+  );
 
   // Read the file and separate metadata (data) from main content
   const raw = fs.readFileSync(filePath, "utf8");
@@ -34,10 +39,7 @@ export default async function GeneralPage() {
       <h1 className="text-4xl font-bold mb-2">{data.title}</h1>
 
       {/* Metadata from markdown (author, publish date, read time) */}
-      <p className="text-sm text-black/60 mb-8">
-        Written by {data.writtenBy} · Published {data.published} ·{" "}
-        {data.readTime}
-      </p>
+      <p className="text-sm text-black/60 mb-8">Read Time {data.readTime}</p>
 
       {/* Styles applied to rendered markdown content */}
       <article

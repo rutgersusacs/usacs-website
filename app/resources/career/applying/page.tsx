@@ -35,21 +35,42 @@ export default function ApplyingPage() {
         <span className="text-black/80">{data.title}</span>
       </nav>
 
-      {/* Page title pulled from markdown frontmatter */}
-      <h1 className="text-4xl font-bold mb-8">{data.title}</h1>
+      <header className="mb-10">
+        <h1 className="text-4xl font-bold">{data.title}</h1>
+
+        <div className="mt-3 flex flex-wrap items-center gap-x-2 text-sm text-black/60">
+          <span>Published {data.published}</span>
+          <span>•</span>
+          <span>Read Time {data.readTime}</span>
+        </div>
+      </header>
 
       {/* Styled container for markdown content */}
       <article
         className="
-          prose prose-neutral max-w-none
-          [&_h2]:text-2xl
-          [&_h2]:font-semibold
-          [&_h2]:mt-10
-          [&_h2]:mb-3
-          [&_a]:text-blue-600
-          [&_a]:underline
-          [&_a:hover]:text-blue-700
-        "
+    prose prose-neutral max-w-none
+
+    [&_p]:mb-7
+    [&_p]:leading-7
+
+    [&_h2]:text-2xl
+    [&_h2]:font-bold
+    [&_h2]:mt-12
+    [&_h2]:mb-5
+
+    [&_h3]:text-xl
+    [&_h3]:font-semibold
+    [&_h3]:mt-10
+    [&_h3]:mb-4
+
+    [&_ul]:my-5
+    [&_ol]:my-5
+    [&_li]:my-2
+
+    [&_a]:text-blue-600
+    [&_a]:underline
+    [&_a:hover]:text-blue-700
+  "
       >
         {/* Converts markdown into formatted content */}
         {/* Enables support for tables, lists, and other markdown features */}

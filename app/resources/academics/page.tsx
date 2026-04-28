@@ -41,11 +41,7 @@ export default async function AcademicsPage() {
         <h1 className="text-4xl font-extrabold tracking-tight">{data.title}</h1>
 
         <div className="mt-3 flex flex-wrap items-center gap-x-2 text-sm text-black/60">
-          <span>Written by {data.writtenBy}</span>
-          <span>•</span>
-          <span>Published {data.published}</span>
-          <span>•</span>
-          <span>{data.readTime}</span>
+          <span>Read Time {data.readTime}</span>
         </div>
       </header>
 

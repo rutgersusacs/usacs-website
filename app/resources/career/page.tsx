@@ -60,6 +60,7 @@ export default async function CareerPage() {
           1. Add a new item in the sections list in career.md (title + slug)
           2. Create a markdown file in content/career with the same slug name
             Example: slug "portfolio" should have portfolio.md
+          3. Create a new folder in resources/career/ and a corresponding page.tsx
     */}
       <section className="grid grid-cols-3 gap-8">
         {/* First 3 tiles shown in the top row */}
