@@ -1,7 +1,13 @@
+// ===== FOOTER COMPONENT =====
 export default function Footer() {
   return (
     <footer className="w-full bg-[var(--usacs-red-light)] py-6">
-      <div className="flex justify-center gap-6">
+      {/* full width + themed background color */}
+
+      <div
+        className="flex justify-center gap-6"
+        /* horizontal layout centered with equal spacing between icons */
+      >
         <a
           href="https://facebook.com"
           target="_blank"
