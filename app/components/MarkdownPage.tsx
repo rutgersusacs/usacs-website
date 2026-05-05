@@ -1,6 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
+import rehypeRaw from "rehype-raw";
 
 interface Crumb {
   label: string;
@@ -75,7 +76,9 @@ export default function MarkdownPage({
           [&_a:hover]:text-blue-700
         "
       >
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+          {content}
+        </ReactMarkdown>
       </article>
     </div>
   );

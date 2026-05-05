@@ -36,33 +36,9 @@ Your interviewer can also ask questions related to your own interests in tech or
 
 ## Behavioral Interviews
 
-### Purpose
+## Purpose
 
 The purpose of behavioral interviews are for the interviewer to assess whether you are a good fit for the company. Do not overlook this as an “easy” interview. Although technical questions are typically not asked here, there is still a wide array of questions that can be thrown at you.
-
-<<<<<<< HEAD
-
-### What The Interview Looks Like
-
-Questions in a behavioral interview can be about your fit within the company or yourself and your experiences. Oftentimes, you will be asked about situations that demonstrate your ability to overcome challenges or work in a team (or both). The interviewer is there to assess whether your personality, technical and non-technical skills, and interests are a good fit for the company and the role you are interviewing for.
-
-### How to Answer a Question (STAR)
-
-In any case, it is highly encouraged to use the STAR method, a very popular format, for answering behavioral interview questions. STAR stands for Situation, Task, Action, and Result. Here is a general overview:
-
-**Situation**: Describe and give background details about your experience. When was it, what type of situation was it, etc. Begin presenting the challenge at hand.
-
-**Task**: Describe the motivation behind what you sought to do, or what the issue at hand was.
-
-**Action**: Describe the measurable steps you took to overcome a challenge, increase performance, etc.
-
-**Result**: Describe the outcome of your action. It can be useful to briefly explain your takeaways from the experience as well.
-
-[This handbook](https://www.techinterviewhandbook.org/behavioral-interview/) is a good resource for preparing for these kinds of interviews, as well as common questions that companies like to ask.
-
-### Elevator Pitch (Tell me about yourself)
-
-=======
 
 ## What The Interview Looks Like
 
@@ -84,8 +60,6 @@ In any case, it is highly encouraged to use the STAR method, a very popular form
 [This handbook](https://www.techinterviewhandbook.org/behavioral-interview/) is a good resource for preparing for these kinds of interviews, as well as common questions that companies like to ask.
 
 ## Elevator Pitch (Tell me about yourself)
-
-> > > > > > > 944ca30 (Fix markdown styling (spacing, lists, HTML rendering))
 
 Almost every behavioral interview begins with the question, “Tell me about yourself”. This is for the interviewer to BRIEFLY learn about your academic and professional background, as well as your general technical interests. The answer to this question is pretty similar to that of an elevator pitch. If you don’t have an elevator pitch, this is where you should start.
 
@@ -117,15 +91,7 @@ Result:
 
 After implementing these changes, the performance improved significantly and the feature was able to handle much larger datasets without slowing down. This experience taught me the importance of carefully considering algorithmic efficiency and reinforced how small changes in data structures or approach can have a large impact on performance.
 
-<<<<<<< HEAD
-
-### How to Practice
-
-=======
-
 ## How to Practice
-
-> > > > > > > 944ca30 (Fix markdown styling (spacing, lists, HTML rendering))
 
 One of the best ways to prepare for behavioral interviews is by consistently practicing how you speak about your past experiences. Start by creating a small set of stories from internships, projects, classes, or leadership roles that demonstrate things like solving technical problems, working on a team, or overcoming challenges. It helps to structure these stories using the STAR format (Situation, Task, Action, Result) so your answers stay organized and clearly show both what you did and what the outcome was.
 
@@ -140,23 +106,11 @@ In order to prepare for a behavioral interview, check out these resources:
 
 ## Technical Interviews - DS & A
 
-<<<<<<< HEAD
-
-### What is a Data Structures & Algorithms interview?
-
-Technical data structures and algorithms (DSA) interviews are still the industry standard way to assess SWE candidates. These interviews test your ability to solve problems involving data structures and algorithms within a time limit. An example of a typical interview problem is reversing a string, reversing a linked list, or validating a binary search tree. While not usually representative of the actual job, there are several tried-and-true methods for studying for them.
-
-### What the Interview Looks Like
-
-=======
-
 ## What is a Data Structures & Algorithms interview?
 
 Technical data structures and algorithms (DSA) interviews are still the industry standard way to assess SWE candidates. These interviews test your ability to solve problems involving data structures and algorithms within a time limit. An example of a typical interview problem is reversing a string, reversing a linked list, or validating a binary search tree. While not usually representative of the actual job, there are several tried-and-true methods for studying for them.
 
 ## What the Interview Looks Like
-
-> > > > > > > 944ca30 (Fix markdown styling (spacing, lists, HTML rendering))
 
 A typical SWE DSA interview starts with you being asked to choose a programming language. Then, you will be presented with a question in a shared IDE. You are given time to read the question and come up with a method to solve it.
 
