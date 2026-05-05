@@ -42,6 +42,9 @@ export default function PersonalProjectsPage() {
 
       {/* Page title from markdown frontmatter */}
       <h1 className="text-4xl font-bold mb-8">{data.title}</h1>
+      <p className="text-gray-600 mb-6">
+        Published {data.published} • Read Time {data.readTime}
+      </p>
 
       {/* Styled container for markdown content */}
       <article
@@ -54,6 +57,12 @@ export default function PersonalProjectsPage() {
           [&_a]:text-blue-600
           [&_a]:underline
           [&_a:hover]:text-blue-700
+          [&_p]:mb-4
+[&_ul]:list-disc
+[&_ul]:pl-6
+[&_ol]:list-decimal
+[&_ol]:pl-6
+[&_li]:mb-2
         "
       >
         {/* Converts markdown into formatted content */}

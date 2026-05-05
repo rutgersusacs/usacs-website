@@ -35,15 +35,10 @@ export default function ApplyingPage() {
         <span className="text-black/80">{data.title}</span>
       </nav>
 
-      <header className="mb-10">
-        <h1 className="text-4xl font-bold">{data.title}</h1>
-
-        <div className="mt-3 flex flex-wrap items-center gap-x-2 text-sm text-black/60">
-          <span>Published {data.published}</span>
-          <span>•</span>
-          <span>Read Time {data.readTime}</span>
-        </div>
-      </header>
+      <h1 className="text-4xl font-bold mb-8">{data.title}</h1>
+      <p className="text-gray-600 mb-6">
+        Published {data.published} • Read Time {data.readTime}
+      </p>
 
       {/* Styled container for markdown content */}
       <article

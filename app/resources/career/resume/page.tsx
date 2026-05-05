@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
+import rehypeRaw from "rehype-raw";
 
 // Career subpage (Resume section)
 // Content is stored in a markdown file and rendered here
@@ -37,6 +38,9 @@ export default function ResumePage() {
 
       {/* Page title from markdown frontmatter */}
       <h1 className="text-4xl font-bold mb-8">{data.title}</h1>
+      <p className="text-gray-600 mb-6">
+        Published {data.published} • Read Time {data.readTime}
+      </p>
 
       {/* Styled container for markdown content */}
       <article
@@ -53,7 +57,9 @@ export default function ResumePage() {
       >
         {/* Converts markdown into formatted content */}
         {/* Enables support for tables, lists, and other markdown features */}
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+          {content}
+        </ReactMarkdown>
       </article>
     </div>
   );

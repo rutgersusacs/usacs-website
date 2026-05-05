@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
+import rehypeRaw from "rehype-raw";
 
 // Career subpage (Interviewing section)
 // Each career topic is stored as a markdown file and rendered on its own page
@@ -42,6 +43,9 @@ export default function InterviewingPage() {
 
       {/* Page title from markdown frontmatter */}
       <h1 className="text-4xl font-bold mb-8">{data.title}</h1>
+      <p className="text-gray-600 mb-6">
+        Published {data.published} • Read Time {data.readTime}
+      </p>
 
       {/* Styled container for markdown content */}
       <article
@@ -54,11 +58,17 @@ export default function InterviewingPage() {
           [&_a]:text-blue-600
           [&_a]:underline
           [&_a:hover]:text-blue-700
+          [&_p]:mb-4
+          [&_ol]:list-decimal
+[&_ol]:pl-6
+[&_li]:mb-2
         "
       >
         {/* Converts markdown into formatted content */}
         {/* Enables support for tables, lists, and other markdown features */}
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+          {content}
+        </ReactMarkdown>
       </article>
     </div>
   );

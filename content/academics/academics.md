@@ -49,7 +49,7 @@ Some sample four-year schedules from past e-board members:
 
 Map your **[progression](https://www.cs.rutgers.edu/undergraduate/computer-science-course-structure)** ahead of time, and make sure you get the courses you want with this four-point approach:
 
-- [Request an SPN](https://www.cs.rutgers.edu/courses/registration) the semester before if you need one.
+- \[Request an SPN\](https://www.cs.rutgers.edu/courses/registration) the semester before if you need one.
 - Register for the course as soon as you’re able to; you’ll be able to find registration schedules from the Office Of The Registrar based on your number of completed credits.
 - The first two weeks of the fall and spring semester is an add drop period where students can add and drop courses at will without incurring a “W”, or withdrawal, on their transcript. Use a course sniper (you can google one) to notify you when a section that works for your schedule opens up, and register immediately.
 - For graduate courses, hunt down the professor for the course you want, email them, go to their office hours, go to the first lecture of the course, and generally annoy them until they promise to let you in the course. This is much easier if you have a history of good grades.

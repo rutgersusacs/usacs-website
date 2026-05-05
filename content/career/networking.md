@@ -10,7 +10,7 @@ We detail this more on the main careers **page,** so we encourage you to look at
 
 That being said, make sure you aren’t participating in clubs and activities with the intention of “networking”. Forming a network of connections happens organically, as a result of fostering genuine relationships with people. Don’t try to make it a 3-step formula for success.
 
-### Engage yourself in communities outside of Rutgers
+## Engage yourself in communities outside of Rutgers
 
 Here are some ideas:
 
@@ -19,19 +19,19 @@ Here are some ideas:
 - Contribute to open source projects. Many modern engineering teams rely heavily on open source software, and contributing to real repositories helps you learn how large codebases work, collaborate with other engineers, and build a public track record of your work.
 - Build and ship projects with people you meet. Some of the most valuable experience comes from simply finding others who want to build things and working together on side projects, startups, or hackathon ideas. This not only improves your technical skills but also helps you build lasting friendships and professional connections.
 
-### Career Fair
+## Career Fair
 
 Career fairs can be one of the easiest ways to directly connect with recruiters and engineers from companies. Before attending, prepare a short elevator pitch that explains who you are, what you study, and what kind of opportunities you are looking for. Many students try to hand out as many resumes as possible, but this approach is often hit or miss. Instead, focus on quality over quantity by having real conversations with a few companies you are interested in, asking thoughtful questions, and trying to build a genuine connection. Getting a recruiter’s LinkedIn or contact information can often be more valuable than just handing them a resume.
 
-### Cold Emailing/Messaging on LinkedIn
+## Cold Emailing/Messaging on LinkedIn
 
 Cold emailing recruiters, hiring managers, or engineers can also open doors to opportunities that you may not find through traditional applications. Keep messages short, polite, and clear about why you are reaching out. Mention who you are, how you found them, and what you are hoping to learn or ask about. Then, ask to speak with them for a quick coffee chat. Having simple templates prepared can make this process much easier, and many students find success by reaching out to alumni who previously attended Rutgers or worked at companies they are interested in.
 
-### Coffee Chats
+## Coffee Chats
 
 Coffee chats are informal conversations where you can learn more about someone’s career path, company, or technical work. The key to a good coffee chat is going in with a goal in mind. Prepare a few thoughtful questions beforehand, such as asking about the person’s experience in their role, how they prepared for interviews, or what advice they have for someone entering the field. The goal is not to immediately ask for a job, but to learn, build a relationship, and leave a positive impression. Keep it short, it’s a coffee chat, not a college class.
 
-### Online Presence (website and community involvement)
+## Online Presence (website and community involvement)
 
 It's good to have a solid personal site that has your resume and is basically your own section of the internet. Also super awesome to be a community leader because that sets you apart from everyone else and is the best testament to your contributions (and networking is important).
 

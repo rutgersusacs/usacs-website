@@ -35,18 +35,22 @@ export default function InternshipSuccessPage() {
       </nav>
 
       <h1 className="text-4xl font-bold mb-8">{data.title}</h1>
+      <p className="text-gray-600 mb-6">
+        Published {data.published} • Read Time {data.readTime}
+      </p>
 
       <article
         className="
-          prose prose-neutral max-w-none
-          [&_h2]:text-2xl
-          [&_h2]:font-semibold
-          [&_h2]:mt-10
-          [&_h2]:mb-3
-          [&_a]:text-blue-600
-          [&_a]:underline
-          [&_a:hover]:text-blue-700
-        "
+    prose prose-neutral max-w-none
+    [&_p]:mb-4
+    [&_h2]:text-2xl
+    [&_h2]:font-semibold
+    [&_h2]:mt-10
+    [&_h2]:mb-3
+    [&_a]:text-blue-600
+    [&_a]:underline
+    [&_a:hover]:text-blue-700
+  "
       >
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
       </article>

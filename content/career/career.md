@@ -68,7 +68,9 @@ In the same vein, use your time early on in college to gain experience in differ
 
 A useful website to explore some of these careers is **[roadmap.sh](http://roadmap.sh)** - it provides a step by step roadmap covering all of the skills needed for each career path. Of course, it does not include **every** career, so make sure to do your own research and leverage your support network if you still feel yourself looking for something you're interested in.
 
-Outside of technical roles, there are numerous career paths that don't involve coding and technical thinking. This **[article](https://cs.unc.edu/student-life/career-services/career-paths-in-computer-science/)** by UNC Chapel Hill talks about some of these careers. Some examples of careers you may want to look into are product management, developer relations, and developer advocacy.
+Another resource to help you find your desired career is this _career guide_(https://80000hours.org/career-guide/) created by a nonprofit. It specifically focuses on finding fulfilling careers that have the most impact.
+
+Outside of technical roles, there are numerous career paths that don’t involve coding and technical thinking. This **article** (https://cs.unc.edu/student-life/career-services/career-paths-in-computer-science/) by UNC Chapel Hill talks about some of these careers. Some examples of careers you may want to look into are product management, developer relations, and developer advocacy.
 
 Tech is very interdisciplinary: if you're passionate about X, you can find something that pays well and is a cross between X and tech. Talk to mentors about this, and follow relevant newsletters:
 

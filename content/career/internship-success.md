@@ -1,4 +1,8 @@
-## Return Offer
+---
+title: Return Offers
+published: April 27, 2026
+readTime: 1 min
+---
 
 Getting a return offer goes far beyond just doing your tasks when they're due. You have to show that you would be a good fit to come back as a full-time employee. This means you should not only have an impressive set of technical skills but also soft skills.
 
@@ -14,4 +18,4 @@ Make yourself visible to your management. If your company has sprint reviews, vo
 
 While you should strive to mesh with the company culture, you should never tolerate a toxic environment. If you find yourself in a situation where a manager or coworker is making you feel uncomfortable or overly stressed in any way, make it known. Escalate your concerns to your manager or HR. Good companies will have zero-tolerance policies for this kind of behavior and will deal with it appropriately. An internship is a two-way street. It's just as much about you deciding if they are the right company for you as it is deciding whether you're the right intern for them.
 
-_Please let us know if anything is broken, needs to be updated, or if you have any feedback [here](https://forms.gle/Z9dsta8Hy4awvK2z5)._
+Please let us know if anything is broken, needs to be updated, or if you have any feedback _here_ (https://forms.gle/Z9dsta8Hy4awvK2z5).

@@ -71,6 +71,9 @@ export default async function AcademicsPage() {
 
           [&_h2]:mt-10
           [&_h2]:mb-3
+          [&_ul]:list-disc
+[&_ul]:pl-6
+[&_li]:mb-2
         "
       >
         {/* Converts the markdown file content into HTML on the page */}

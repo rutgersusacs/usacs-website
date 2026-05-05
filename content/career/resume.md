@@ -1,6 +1,8 @@
 ---
 title: Resume
-readTime: 5 min
+writtenBy: Barghavi
+published: April 27, 2026
+readTime: 7 min
 ---
 
 The most important part of an application is your resume. A recruiter only spends seven seconds on average looking at a resume, so it should provide them with your skills, accomplishments, and interests in the most efficient way possible. Because a resume is all a recruiter has to judge you by, spending time on it is the single most effective thing you can do to land an internship.
