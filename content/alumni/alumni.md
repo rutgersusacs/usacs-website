@@ -3,7 +3,7 @@ title: "Alumni"
 readTime: "6 min"
 ---
 
-## Tanya Balaraju (https://tanya.github.io/)
+## [Tanya Balaraju](https://tanya.github.io/)
 
 ### Realize that there’s no one way to succeed.
 
@@ -26,7 +26,7 @@ readTime: "6 min"
 - Aim to grow. You can’t be your high school self forever.
 - Check in on your own thoughts and behaviors often. Don’t be a jerk. No one likes a jerk.
 
-## Jamie Liao (http://jamieliao.com/)
+## [Jamie Liao](http://jamieliao.com/)
 
 ### Do what you enjoy.
 

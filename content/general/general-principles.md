@@ -132,4 +132,4 @@ There is a fundamental difference between knowing a concept and being able to ex
 
 When you reach a position where you feel comfortable to take on mentees, it can enhance your growth if you do. Actively helping others is how you leave a legacy at Rutgers. By sharing your knowledge, you contribute to a culture where everyone levels up together, making the environment at Rutgers better for the next generation of students. This also serves as a powerful way to build your support network. The people you help today often become the peers who refer you for jobs, collaborate with you on side projects, or become your closest friends tomorrow.
 
-- Please let us know if anything is broken, needs to be updated, or if you have any feedback **here**(https://forms.gle/Z9dsta8Hy4awvK2z5).\
+- Please let us know if anything is broken, needs to be updated, or if you have any feedback **here** (https://forms.gle/Z9dsta8Hy4awvK2z5).\
