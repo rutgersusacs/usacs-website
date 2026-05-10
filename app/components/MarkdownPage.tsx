@@ -14,6 +14,7 @@ interface MarkdownPageProps {
   breadcrumbs: Crumb[];
   published?: string;
   readTime?: string;
+  writtenBy?: string;
 }
 
 export default function MarkdownPage({
@@ -22,6 +23,7 @@ export default function MarkdownPage({
   breadcrumbs,
   published,
   readTime,
+  writtenBy,
 }: MarkdownPageProps) {
   return (
     <div className="max-w-[900px] mx-auto py-10 px-6">
@@ -42,8 +44,10 @@ export default function MarkdownPage({
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold">{title}</h1>
-        {(published || readTime) && (
+        {(writtenBy || published || readTime) && (
           <div className="mt-3 flex flex-wrap items-center gap-x-2 text-sm text-black/60">
+            {writtenBy && <span>Written by {writtenBy}</span>}
+            {writtenBy && (published || readTime) && <span>•</span>}
             {published && <span>Published {published}</span>}
             {published && readTime && <span>•</span>}
             {readTime && <span>Read Time {readTime}</span>}
@@ -74,6 +78,10 @@ export default function MarkdownPage({
           [&_a]:text-blue-600
           [&_a]:underline
           [&_a:hover]:text-blue-700
+          [&_h1]:text-4xl
+[&_h1]:font-bold
+[&_h1]:mt-14
+[&_h1]:mb-6
         "
       >
         <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>

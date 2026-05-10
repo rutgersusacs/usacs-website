@@ -13,6 +13,7 @@ export default function ResumePage() {
     <MarkdownPage
       title={data.title}
       content={content}
+      writtenBy={data.writtenBy}
       published={data.published}
       readTime={data.readTime}
       breadcrumbs={[

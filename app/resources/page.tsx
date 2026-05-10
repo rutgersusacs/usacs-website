@@ -19,6 +19,100 @@ export default async function ResourcesPage() {
         </PageSubtitle>
       </PageHeader>
 
+      <section className="mx-auto mt-10 max-w-[900px] px-6 text-[var(--usacs-red-dark)]">
+        <p className="mb-6 text-lg leading-8">
+          The guides presented here are adapted from guides on “Succeeding in
+          Rutgers CS” written by Sakib Jalal (‘18). Much of the information has
+          been updated, but some is still the same. You can find his guides{" "}
+          <a
+            href="https://github.com/sakib/succeeding_in_rutgers_cs"
+            className="font-semibold underline"
+          >
+            here
+          </a>
+          . For further reading, Vaibhav Verma (‘15) created his own set of
+          guides. You can find his guides{" "}
+          <a
+            href="https://vverma.net/succeeding-in-rutgers-cs.html"
+            className="font-semibold underline"
+          >
+            here
+          </a>
+          .
+        </p>
+
+        <h3 className="mb-3 text-2xl font-bold">Background</h3>
+
+        <p className="mb-6 text-lg leading-8">
+          Initially, when you first start college, make sure you're settled in
+          and comfortable with college life. Defining what success looks like
+          for you and achieving your goals can be overwhelming, but college is a
+          marathon, not a sprint. You have years to explore your interests, make
+          life-long friends, and to learn faster than you ever have.
+        </p>
+
+        <p className="mb-6 text-lg leading-8">
+          The information presented in these guides is based on what we’ve found
+          effective in our experiences in Rutgers CS. However, there is no one
+          way to do things, and everyone has their own path. We hope these
+          guides provide you a starting point in your time here at Rutgers, but
+          they are by no means an end-all be all.
+        </p>
+
+        <h3 className="mb-3 text-2xl font-bold">Contributors</h3>
+
+        <ul className="list-disc space-y-1 pl-6 text-lg leading-8">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jiayue-xue/"
+              className="underline"
+            >
+              Angela Xue (‘26)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ranajay531/"
+              className="underline"
+            >
+              Jay Rana (‘26)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/farhan-khan29/"
+              className="underline"
+            >
+              Farhan Khan (‘26)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/barghavig/"
+              className="underline"
+            >
+              Barghavi Gopinath (‘26)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/martin5390/"
+              className="underline"
+            >
+              Martin Shen (‘27)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/hasan-ali-618021292/"
+              className="underline"
+            >
+              Hasan Ali (‘27)
+            </a>
+          </li>
+        </ul>
+      </section>
+
       {/* suggestion box */}
       {/* Call-to-action for users to suggest new resources */}
       <section className="mt-10 text-center">
@@ -100,9 +194,7 @@ export default async function ResourcesPage() {
               </h3>
 
               <p className="text-[var(--cream)] text-sm leading-[1.35]">
-                All the essentials for succeeding in CS, including how to get
-                involved in research, sign up for classes, and plenty of other
-                helpful tips!
+                Advice for succeeding in the classroom in Rutgers CS.
               </p>
             </a>
           </Card>
@@ -145,8 +237,9 @@ export default async function ResourcesPage() {
               </h3>
 
               <p className="text-[var(--cream)] text-sm leading-[1.35]">
-                How to grow your skills, connect with the right people, and
-                unlock new opportunities!
+                Our internship guide covering all you need to know from scratch
+                to land a tech internship. Includes resources for learning new
+                technical skills.
               </p>
             </a>
           </Card>
@@ -189,8 +282,7 @@ export default async function ResourcesPage() {
               </h3>
 
               <p className="text-[var(--cream)] text-sm leading-[1.35]">
-                Key tools to grow and stay grounded, with advice on staying
-                organized and navigating challenges with ease.
+                Advice we wish we had when we began Rutgers CS.
               </p>
             </a>
           </Card>
@@ -233,9 +325,7 @@ export default async function ResourcesPage() {
               </h3>
 
               <p className="text-[var(--cream)] text-sm leading-[1.35]">
-                Practical tips from graduates on thriving in CS, including how
-                to build experience, explore career options, and avoid common
-                pitfalls.
+                Tips from accomplished graduates.
               </p>
             </a>
           </Card>

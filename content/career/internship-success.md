@@ -18,4 +18,4 @@ Make yourself visible to your management. If your company has sprint reviews, vo
 
 While you should strive to mesh with the company culture, you should never tolerate a toxic environment. If you find yourself in a situation where a manager or coworker is making you feel uncomfortable or overly stressed in any way, make it known. Escalate your concerns to your manager or HR. Good companies will have zero-tolerance policies for this kind of behavior and will deal with it appropriately. An internship is a two-way street. It's just as much about you deciding if they are the right company for you as it is deciding whether you're the right intern for them.
 
-Please let us know if anything is broken, needs to be updated, or if you have any feedback _here_ (https://forms.gle/Z9dsta8Hy4awvK2z5).
+Please let us know if anything is broken, needs to be updated, or if you have any feedback **[here](https://forms.gle/Z9dsta8Hy4awvK2z5)**.

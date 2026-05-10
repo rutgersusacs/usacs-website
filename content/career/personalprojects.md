@@ -28,7 +28,7 @@ For learning new skills or for additional notes/resources on your classwork, che
 Knowing your way around linux environments is essential to staying afloat in dev/production environments. Even as an app developer, you need to know how to set up systems properly and manage your apps on linux servers. Having fluency in the terminal is a must , so here are some resources to help get your foot in the door:
 
 - [Essential Linux Commands](https://www.digitalocean.com/community/tutorials/linux-commands) that are commonly used
-- - A video outlining the fundamentals of Linux
+  - A video outlining the fundamentals of Linux
 - [The Linux System Administrator's Guide](http://www.tldp.org/LDP/sag/sag.pdf) - Textbook resource. Chapters 2, 3, 7, and 11 are all you need to read to get you familiar with how Linux OS generally works at a high level.
 - A student’s notes on Linux (bunch of material, don’t start here if you have no experience in Linux);
 
