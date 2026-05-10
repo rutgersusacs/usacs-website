@@ -5,6 +5,7 @@ type Props = {
   className?: string;
 };
 
+// ===== COMPONENT =====
 export default function SectionWrapper({ children, className = "" }: Props) {
   return (
     // Applies vertical and horizontal padding

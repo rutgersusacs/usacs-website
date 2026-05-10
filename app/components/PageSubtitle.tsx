@@ -5,6 +5,7 @@ type PageSubtitleProps = {
   className?: string;
 };
 
+// ===== COMPONENT =====
 export default function PageSubtitle({
   children,
   className = "",
@@ -21,6 +22,7 @@ export default function PageSubtitle({
         font-medium
         ${className}
       `}
+      /* pill-shaped subtitle with semi-transparent background */
     >
       {children}
     </p>

@@ -6,7 +6,7 @@ export type BoardMember = {
   description1: string;
   description2: string;
   imageSrc: string;
-  isGod: boolean;
+  isCoPresident: boolean;
 };
 
 /* =========================
@@ -23,7 +23,7 @@ export const EXEC_BOARD: BoardMember[] = [
     description2:
       "She has countless favorite USACS events—Paws and Professors, Mock Interviews, and the Bloomberg office visit to name a few—but her favorite memories are hosting board meetings with a team of kind, passionate, and driven board members. Angela is especially interested in exploring finance and tech career paths outside of traditional software engineering roles.",
     imageSrc: "profiles/angela-r.png",
-    isGod: true,
+    isCoPresident: true,
   },
   {
     name: "Ishita Gabhane",
@@ -35,7 +35,7 @@ export const EXEC_BOARD: BoardMember[] = [
     description2:
       "Outside of USACS, she enjoys spending time with friends, making art, planning her next travel adventure, and trying new food spots. Ishita’s favorite events include Paws & Professors and board socials, and she is passionate about pursuing career paths in software engineering, AI/ML, and fintech.",
     imageSrc: "profiles/ishita-r.png",
-    isGod: true,
+    isCoPresident: true,
   },
 ];
 
@@ -53,7 +53,7 @@ export const BOARD: BoardMember[] = [
     description2:
       "Outside of academics, he enjoys playing the saxophone, hitting the tennis courts, reading, and exploring his love for cars. His favorite USACS memory is attending his first Town Hall, and he’s excited to pursue a career in software engineering.",
     imageSrc: "profiles/hasan-r.png",
-    isGod: false,
+    isCoPresident: false,
   },
   {
     name: "Gokul Elangovan",
@@ -64,7 +64,7 @@ export const BOARD: BoardMember[] = [
     description2:
       "Outside of academics, he’s a big fan of sweets and enjoys creative outlets—his favorite event so far was the Paint and Sip, where he formed peers as President Sib. Gokul is especially interested in AI/ML research and loves collaborating on exciting projects.",
     imageSrc: "profiles/gokul-r.png",
-    isGod: false,
+    isCoPresident: false,
   },
   {
     name: "Zene Sangoi",
@@ -76,7 +76,7 @@ export const BOARD: BoardMember[] = [
     description2:
       "A fun fact about her—she’s already visited 40 countries! Her favorite USACS memory is the outdoor boba social held right before elections, and she’s especially passionate about pursuing a career in Data Science and AI/ML.",
     imageSrc: "profiles/zene-r.png",
-    isGod: false,
+    isCoPresident: false,
   },
   {
     name: "Ved Patel",
@@ -87,7 +87,7 @@ export const BOARD: BoardMember[] = [
     description2:
       "Outside of academics, Ved loves playing basketball and going on hikes. One of his favorite USACS experiences was the mentorship socials, where he met incredible mentors who supported him along his journey. He hopes to pursue a career in software engineering and artificial intelligence.",
     imageSrc: "profiles/ved-r.png",
-    isGod: false,
+    isCoPresident: false,
   },
   {
     name: "Pallavi Biswas",
@@ -99,7 +99,7 @@ export const BOARD: BoardMember[] = [
     description2:
       "She treasures events like Paws & Professors, where she combined her love for dogs with networking opportunities, and considers e-board socials a favorite. Pallavi is especially passionate about pursuing a career in AI/ML engineering and data analytics.",
     imageSrc: "profiles/pallavi-r.png",
-    isGod: false,
+    isCoPresident: false,
   },
   {
     name: "Anusha Iyer",
@@ -111,6 +111,6 @@ export const BOARD: BoardMember[] = [
     description2:
       "Her favorite USACS memory is last year’s mentorship socials, where she connected with peers and mentors who inspired her journey. Outside of academics, she enjoys dancing, reading, listening to music, and solving crossword puzzles. She’s especially interested in pursuing a career in software engineering and AI/ML.",
     imageSrc: "profiles/anusha-r.png",
-    isGod: false,
+    isCoPresident: false,
   },
 ];

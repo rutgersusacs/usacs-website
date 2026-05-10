@@ -1,5 +1,6 @@
 "use client";
 
+// ===== IMPORTS =====
 import { useEffect, useState } from "react";
 
 // Navigation bar shown at the top of the site
@@ -18,6 +19,7 @@ export default function NavBar() {
     { href: "/donate", label: "Donate" },
   ];
 
+  // Close mobile menu when resizing to desktop
   useEffect(() => {
     // If the screen becomes large (desktop), close the mobile menu
     // Prevents the menu from staying open when switching screen sizes
@@ -49,15 +51,18 @@ export default function NavBar() {
           ))}
         </div>
 
+        {/* MOBILE MENU BUTTON */}
         <button
           type="button"
           className="md:hidden inline-flex items-center justify-center p-2 rounded text-white"
+          /* only visible on mobile + centers icon inside button */
           aria-label="Open menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             {open ? (
+              // X icon (close)
               <path
                 d="M6 6L18 18M18 6L6 18"
                 stroke="currentColor"
@@ -65,6 +70,7 @@ export default function NavBar() {
                 strokeLinecap="round"
               />
             ) : (
+              // Hamburger icon (menu)
               <path
                 d="M4 7h16M4 12h16M4 17h16" // hamburger icon when menu is closed
                 stroke="currentColor"
@@ -78,8 +84,14 @@ export default function NavBar() {
 
       {/* Mobile menu (only rendered when open is true) */}
       {open && (
-        <div className="md:hidden border-t border-white/10">
-          <div className="px-4 py-3 flex flex-col">
+        <div
+          className="md:hidden border-t border-white/10"
+          /* only visible on mobile + subtle top divider */
+        >
+          <div
+            className="px-4 py-3 flex flex-col"
+            /* stacked vertical links */
+          >
             {links.map((l) => (
               <a
                 key={l.href}
