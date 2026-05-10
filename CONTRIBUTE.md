@@ -1,119 +1,267 @@
-# Contributing Guide
+# Contributing to USACS Resources
 
-This guide explains how to edit existing content and how to add a new section (tile) to the Career page.
+Thank you for your interest in contributing! 🎉  
+We welcome contributions from the community, whether it's:
 
----
+- Adding new guides
+- Improving existing content
+- Fixing bugs or formatting issues
 
-## Editing Existing Content
-
-All website content is stored in the `content/` folder as Markdown (`.md`) files.
-
-Example structure:
-content/
-career/
-career.md
-resume.md
-applying.md
-
-To edit content:
-
-1. Go to the correct file in the `content/` folder  
-   (e.g., `content/career/resume.md`)
-2. Open the file
-3. Edit the text using Markdown syntax:
-   - `##` for headings
-   - `-` for bullet points
-   - `[text](link)` for links
-4. Save the file
-5. Refresh the browser to see changes
+All contributions must be submitted through a Pull Request and approved before being merged.
 
 ---
 
-## Adding a New Career Section (New Tile)
+## How to Contribute
 
-To add a new section (like Resume, Applying, etc.), you must complete all three steps below.
+### 1. Fork the repository
 
-### Step 1: Add the section in career.md
+Click the **"Fork"** button on GitHub.
 
-Open:
-content/career/career.md
+### 2. Clone your fork locally
 
-Find the `sections` list and add:
+```bash
+git clone https://github.com/YOUR-USERNAME/usacs-website.git
+cd usacs-website
+```
 
-- title: "New Section Name"
-  slug: "newsection"
+### 3. Create a new branch
 
-- `title` is what appears on the tile
-- `slug` is used for the URL and file name
+```bash
+git checkout -b feature/your-feature-name
+```
 
----
+### 4. Make your changes
 
-### Step 2: Create the Markdown file
+Edit or add files (see sections below).
 
-Create a new file:
-content/career/newsection.md
+### 5. Commit and push
 
-Add:
+```bash
+git add .
+git commit -m "Describe your changes"
+git push origin feature/your-feature-name
+```
 
----
+### 6. Open a Pull Request
 
-## title: "New Section Name"
-
-## Your Content Here
-
----
-
-### Step 3: Create the page (IMPORTANT)
-
-Create a folder:
-app/resources/career/newsection/
-
-Inside it, create:
-page.tsx
-
-Copy an existing page (like resume/page.tsx) and update the file path to:
-
-const filePath = path.join(
-process.cwd(),
-"content",
-"career",
-"newsection.md"
-);
+Go to your fork on GitHub and click **"Compare & pull request"**.
 
 ---
 
-## Key Concept: Slug
+## Editing or Adding Content
 
-A slug is the name used in the URL.
+All content is written in Markdown and stored in the `content/` folder.
+
+### Example directories:
+
+- `content/career/`
+- `content/academics/`
+- `content/general/`
+
+---
+
+### To edit an existing page:
+
+1. Locate the corresponding `.md` file
+2. Update the content using Markdown
+
+---
+
+### To add a new page:
+
+1. Create a new `.md` file in the appropriate folder in `content/`
+
+### Example: If you want to add another section to career (like career-paths.md), go to the career folder in `content/` and create an `.md` file with that name
+
+2. Add the following frontmatter at the top of your `.md` file:
+
+```md
+---
+title: Your Title
+writtenBy: Your name
+published: Month Day, Year
+readTime: X min
+---
+```
+
+3. Write your content below the frontmatter (this is what will be rendered on the website page). Be sure to add a title and slug to the main markdown file.
+
+Slug must match your markdown file name.
+
+### Example 1: Adding a new section to Career
+
+Navigate to the main markdown file:
+
+`content/career/career.md`
+
+Add a new section like this:
+
+title: "Career"  
+type: "hub"  
+sections:
+
+- title: "Career Paths"  
+  slug: "career-paths"
+
+---
+
+### Example 2: Adding a new section to Academics
+
+Navigate to the main markdown file:
+
+`content/academics/academics.md`
+
+Add a new section like this:
+
+title: "Academics"  
+type: "hub"  
+sections:
+
+- title: "Exams"  
+  slug: "exams"
+
+---
+
+### Next Steps
+
+Once your markdown file is created:
+
+1. Go to the `app/resources/` folder
+
+2. Navigate to the correct section:
+   - Career → `app/resources/career`
+   - Academics → `app/resources/academics`
+
+3. Create a new folder for your page  
+   Example:
+   `app/resources/career/career-paths`
+
+4. Inside that folder, create a `page.tsx` file:
+   `app/resources/career/career-paths/page.tsx`
+
+5. Add content to your `page.tsx` file
+
+Inside your `page.tsx`, you should load your Markdown file and pass it into the shared `MarkdownPage` component.
+
+### Example:
+
+```tsx
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import MarkdownPage from "@/app/components/MarkdownPage";
+
+export default function CareerPathsPage() {
+  const filePath = path.join(
+    process.cwd(),
+    "content",
+    "career",
+    "career-paths.md",
+  );
+
+  const raw = fs.readFileSync(filePath, "utf8");
+  const { data, content } = matter(raw);
+
+  return (
+    <MarkdownPage
+      title={data.title}
+      content={content}
+      published={data.published}
+      readTime={data.readTime}
+      breadcrumbs={[
+        { label: "Home", href: "/" },
+        { label: "Resources", href: "/resources" },
+        { label: "Career", href: "/resources/career" },
+        { label: data.title },
+      ]}
+    />
+  );
+}
+```
+
+---
+
+---
+
+### Example Structure
+
+- Markdown file with content:`content/general/general-principles.md`
+- Page that renders the md: `app/resources/general/page.tsx`
+
+---
+
+### How it works
+
+The `page.tsx` file:
+
+1. Reads the Markdown file from the `content/` folder
+2. Extracts metadata (title, read time, etc.) using `gray-matter`
+3. Passes the content into the shared `MarkdownPage` component
 
 Example:
-slug: "resume"
 
-This connects everything:
-
-- URL → /resources/career/resume
-- File → resume.md
-- Page → app/resources/career/resume/page.tsx
-
-All three must match exactly.
-
----
-
-## Common Mistakes
-
-- Slug does not match file name
-- Forgot to create page.tsx
-- File placed in wrong folder
+```tsx
+<MarkdownPage
+  title={data.title}
+  content={content}
+  readTime={data.readTime}
+  breadcrumbs={[...]}
+/>
+```
 
 ---
 
-## How Everything Connects
+## Markdown Guidelines
 
-1. Sections are defined in career.md
-2. Each section has a slug
-3. The slug maps to:
-   - a Markdown file
-   - a page
-4. The page loads the Markdown file and displays it
+- Leave a blank line between paragraphs
+- Use `-` or `1.` for lists
+- Use headings (`##`, `###`) for structure
+- Keep formatting clean and consistent
+- HTML is allowed (e.g., tables) if needed
 
 ---
+
+## Code Changes
+
+- Follow the existing project structure
+- Keep components reusable and clean
+- Test your changes before submitting
+
+Run locally:
+
+```bash
+npm run dev
+```
+
+---
+
+## Pull Request Process
+
+When creating a PR, please:
+
+- Use a clear and descriptive title
+- Explain what you changed and why
+- Keep PRs focused (avoid unrelated changes)
+
+After submitting:
+
+1. Wait for review from maintainers
+2. Address any requested changes
+3. Once approved, your changes will be merged 🎉
+
+---
+
+## Guidelines
+
+- Check existing issues before starting work
+- Test your changes before submitting
+- Write clear commit messages
+- Be respectful and collaborative
+
+---
+
+## Questions?
+
+- Open an issue on GitHub for questions or feature requests
+
+Thank you for helping improve USACS Resources! 🚀
