@@ -45,41 +45,62 @@ export default function HomePage() {
                 </PageSubtitle>
 
                 <div className="mt-5 flex flex-wrap items-center gap-2 justify-center px-4 md:px-0">
-                  <img
-                    src="/icons/Facebook.png"
-                    alt="Facebook"
-                    className="h-8 w-auto cursor-pointer"
-                  />
-                  <img
-                    src="/icons/Twitter.png"
-                    alt="Twitter"
-                    className="h-8 w-auto cursor-pointer"
-                  />
-                  <img
-                    src="/icons/Instagram.png"
-                    alt="Instagram"
-                    className="h-8 w-auto cursor-pointer"
-                  />
-                  <img
-                    src="/icons/Github.png"
-                    alt="GitHub"
-                    className="h-8 w-auto cursor-pointer"
-                  />
-                  <img
-                    src="/icons/Youtube.png"
-                    alt="YouTube"
-                    className="h-8 w-auto cursor-pointer"
-                  />
-                  <img
-                    src="/icons/MediumBlog.png"
-                    alt="Medium Blog"
-                    className="h-8 w-auto cursor-pointer"
-                  />
-                  <img
-                    src="/icons/Discord.png"
-                    alt="Discord"
-                    className="h-8 w-auto cursor-pointer"
-                  />
+                  <a
+                    href="https://www.instagram.com/rutgers_usacs/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/icons/Instagram.png"
+                      alt="Instagram"
+                      className="h-8 w-auto cursor-pointer"
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/usacs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/icons/Github.png"
+                      alt="GitHub"
+                      className="h-8 w-auto cursor-pointer"
+                    />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCwDoERNwcCrZICFil2fmdmA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/icons/Youtube.png"
+                      alt="YouTube"
+                      className="h-8 w-auto cursor-pointer"
+                    />
+                  </a>
+                  <a
+                    href="https://medium.com/@rutgersusacs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/icons/MediumBlog.png"
+                      alt="Medium Blog"
+                      className="h-8 w-auto cursor-pointer"
+                    />
+                  </a>
+                  {/* <a 
+                    href="https://discord.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/icons/Discord.png"
+                      alt="Discord"
+                      className="h-8 w-auto cursor-pointer"
+                    />
+                  </a>
+                  */}
                 </div>
               </div>
             </div>
@@ -152,13 +173,30 @@ export default function HomePage() {
               {/* Box listing ways students can stay connected (GroupMe, etc) */}
               <div className="bg-[var(--light-red-box)] px-7 py-6 rounded-[26px]">
                 <p className="text-[var(--usacs-red-dark)] text-xl sm:text-2xl md:text-3xl leading-8 sm:leading-9 md:leading-10">
-                  Check out our <span className="font-extrabold">GroupMe</span>
+                  Check out our{" "}
+                  <a
+                    className="font-extrabold"
+                    href="https://web.groupme.com/join_group/107740869/jBpq3tpX"
+                  >
+                    GroupMe
+                  </a>
                   <br />
-                  Follow our <span className="font-extrabold">Instagram</span>
+                  Follow our{" "}
+                  <a
+                    className="font-extrabold"
+                    href="https://www.instagram.com/rutgers_usacs/"
+                  >
+                    Instagram
+                  </a>
                   <br />
                   See our{" "}
-                  <span className="font-extrabold">Google Calendar</span> for
-                  future events
+                  <a
+                    className="font-extrabold"
+                    href="https://calendar.google.com/calendar/u/0?cid=OTIzYTkyNzRlZjRmOTVhNjc0MGJmNDA3NTBjNjBiOGI2ZjUxMDgxNDFhY2E2YjQ4OGQ1NjM5ZWVlNjFkMTMxZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+                  >
+                    Google Calendar
+                  </a>{" "}
+                  for future events
                 </p>
               </div>
             </div>

@@ -8,36 +8,37 @@ export default function Footer() {
         {/* Each link opens a social media page in a new tab */}
         {/* target="_blank" opens the link in a new tab */}
         {/* rel="noopener noreferrer" is for security when opening new tabs */}
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/icons/Facebook.png" alt="Facebook" className="h-6 w-6" />
-        </a>
-
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <img src="/icons/Twitter.png" alt="Twitter" className="h-6 w-6" />
-        </a>
 
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/rutgers_usacs/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src="/icons/Instagram.png" alt="Instagram" className="h-6 w-6" />
         </a>
 
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/usacs"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="/icons/Github.png" alt="GitHub" className="h-6 w-6" />
         </a>
 
-        <a href="https://medium.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://medium.com/@rutgersusacs"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="/icons/MediumBlog.png" alt="Medium" className="h-6 w-6" />
         </a>
 
-        <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
-          <img src="/icons/Discord.png" alt="Discord" className="h-6 w-6" />
+        <a
+          href="https://www.youtube.com/channel/UCwDoERNwcCrZICFil2fmdmA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/icons/Youtube.png" alt="YouTube" className="h-6 w-6" />
         </a>
       </div>
     </footer>
