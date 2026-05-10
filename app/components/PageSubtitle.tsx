@@ -1,6 +1,7 @@
-// ===== TYPES =====
+// Component for subtitle text shown inside the page header
+
 type PageSubtitleProps = {
-  children: React.ReactNode;
+  children: React.ReactNode; // subtitle text
   className?: string;
 };
 
@@ -10,6 +11,8 @@ export default function PageSubtitle({
   className = "",
 }: PageSubtitleProps) {
   return (
+    // Styled text container with rounded edges and a semi-transparent background
+    // Used to highlight subtitle text within the header section
     <p
       className={`
         inline-block

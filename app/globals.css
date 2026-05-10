@@ -1,38 +1,33 @@
 @import "tailwindcss";
 @reference utilities;
 
-/* #colors */
+/* Global color variables */
+/* Used across the entire site for consistent styling */
+
 :root {
-  --usacs-red-light: #AF2F2E;
-  --usacs-red-dark: #610C0B;
+  /* Primary brand colors (used for headers, nav, major sections) */
+  --usacs-red-light: #af2f2e;
+  --usacs-red-dark: #610c0b;
 
-  --cream: #FBF4E4;
-  --white: #ffffff;
+  /* Base background colors */
+  --cream: #fbf4e4; /* main page background */
+  --white: #ffffff; /* cards, text contrast areas */
 
-  --text-dark: #2b2b2b;
-  --text-muted: #6b6b6b;
+  /* Text colors */
+  --text-dark: #2b2b2b; /* main body text */
+  --text-muted: #6b6b6b; /* secondary / lighter text */
 
+  /* Borders */
   --border-light: #e6e2d6;
 
-  --cream-light: #FBF4E4;
-  --light-red-box: #e0c8c1;
+  /* Reusable background variations */
+  --cream-light: #fbf4e4; /* lighter cream sections */
+  --light-red-box: #e0c8c1; /* used for tiles (like Career tiles) */
 
-  --resource-tile: #761413;
+  /* Resource page specific styles */
+  --resource-tile: #761413; /* red cards on Resources page */
+  --resource-circle: #ad736b; /* icon background circles inside cards */
 
-  --resource-circle: #AD736B;
-
-  --brown: #54412F;
-
-  --grey: #342606;
-  
-
-
+  --brown: #54412f; /* used for text or accents */
+  --grey: #342606; /* darker accent color */
 }
-
-
-
-
-
-
-
-

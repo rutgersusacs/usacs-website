@@ -3,11 +3,13 @@
 // ===== IMPORTS =====
 import { useEffect, useState } from "react";
 
-// ===== NAVBAR COMPONENT =====
-export default function NavBar() {
-  const [open, setOpen] = useState(false); // mobile menu state
+// Navigation bar shown at the top of the site
+// Includes desktop links and a toggleable mobile menu
 
-  // Navigation links
+export default function NavBar() {
+  const [open, setOpen] = useState(false); // tracks whether the mobile menu is open
+
+  // Navigation links used for both desktop and mobile views
   const links = [
     { href: "/", label: "Home" },
     { href: "/mission", label: "Mission" },
@@ -19,6 +21,8 @@ export default function NavBar() {
 
   // Close mobile menu when resizing to desktop
   useEffect(() => {
+    // If the screen becomes large (desktop), close the mobile menu
+    // Prevents the menu from staying open when switching screen sizes
     const onResize = () => {
       if (window.innerWidth >= 768) setOpen(false);
     };
@@ -27,24 +31,15 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav
-      className="sticky top-0 z-50 bg-[var(--usacs-red-dark)] shadow-sm"
-      /* sticks to top + high z-index to stay above content */
-    >
-      <div
-        className="w-full px-6 sm:px-10 h-14 flex items-center justify-between"
-        /* horizontal layout with spacing + vertically centered items */
-      >
-        {/* LOGO */}
+    // Sticky navbar that stays at the top while scrolling
+    <nav className="sticky top-0 z-50 bg-[var(--usacs-red-dark)] shadow-sm">
+      <div className="w-full px-6 sm:px-10 h-14 flex items-center justify-between">
         <a href="/" className="text-white font-extrabold tracking-wide">
           USACS
         </a>
 
-        {/* DESKTOP NAV */}
-        <div
-          className="hidden md:flex items-center gap-6"
-          /* hidden on mobile → flex row on md+ screens */
-        >
+        {/* Desktop navigation (hidden on smaller screens) */}
+        <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
             <a
               key={l.href}
@@ -77,7 +72,7 @@ export default function NavBar() {
             ) : (
               // Hamburger icon (menu)
               <path
-                d="M4 7h16M4 12h16M4 17h16"
+                d="M4 7h16M4 12h16M4 17h16" // hamburger icon when menu is closed
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -87,7 +82,7 @@ export default function NavBar() {
         </button>
       </div>
 
-      {/* MOBILE DROPDOWN */}
+      {/* Mobile menu (only rendered when open is true) */}
       {open && (
         <div
           className="md:hidden border-t border-white/10"

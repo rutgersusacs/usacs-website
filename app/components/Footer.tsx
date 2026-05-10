@@ -1,13 +1,13 @@
-// ===== FOOTER COMPONENT =====
+// Footer component shown at the bottom of the site
+// Displays social media links using icon images
+
 export default function Footer() {
   return (
     <footer className="w-full bg-[var(--usacs-red-light)] py-6">
-      {/* full width + themed background color */}
-
-      <div
-        className="flex justify-center gap-6"
-        /* horizontal layout centered with equal spacing between icons */
-      >
+      <div className="flex justify-center gap-6">
+        {/* Each link opens a social media page in a new tab */}
+        {/* target="_blank" opens the link in a new tab */}
+        {/* rel="noopener noreferrer" is for security when opening new tabs */}
         <a
           href="https://facebook.com"
           target="_blank"
