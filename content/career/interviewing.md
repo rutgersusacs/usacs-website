@@ -104,7 +104,7 @@ In order to prepare for a behavioral interview, check out these resources:
 1. [Tech Interview Handbook](https://www.techinterviewhandbook.org/behavioral-interview/) - list of behavioral questions to practice.
 2. Create a copy of [this](https://docs.google.com/document/d/1H3001XFiVSkRnU1u3e6UuHY2G0DSqEInce4ftYg_vX4/edit?usp=sharing) document. Fill in your answers in the “Answer” section for “Tell me about yourself”, “Why X company?”, and fill in the STAR outline for two stories that show your strengths & leadership, two stories that show weaknesses & failures, and two stories that show teamwork & conflict. You can then adapt these stories to answer a wide range of commonly asked behavioral questions.
 
-## Technical Interviews - DS & A
+# Technical Interviews - DS & A
 
 ## What is a Data Structures & Algorithms interview?
 
@@ -207,7 +207,7 @@ After grinding problems, it is extremely important that you do as many mock inte
 
 As a final note on this type of technical interview, practice problems together with your friends! It is much easier to motivate yourself and you’ll get better practice by engaging with these problems with others.
 
-## Technical Interviews - System Design
+# Technical Interviews - System Design
 
 A system design interview is an interview where you’ll be tasked with coming up with an architecture for some sort of application. For instance, you might be tasked with building out the system design for a new parking garage app powered by AI. System design interviews are all about making assumptions and doing “back of the napkin” math, so you’ll be asking a lot of questions, gathering requirements, and then using what you know to build a system that fits the needs of the problem. To do this, it is important that you understand the different components that go into creating scalable systems. Distributed Systems is a great class to take for this (or if you’re into this kind of stuff), but there are plenty of resources online such as _[System Design Interview, An Insider’s Guide](https://bytes.usc.edu/~saty/courses/docs/data/SystemDesignInterview.pdf)_, this [tutorial](https://www.youtube.com/watch?v=m8Icp_Cid5o), as well as plenty of mock [interviews](https://www.youtube.com/watch?v=_UZ1ngy-kOI) on Youtube.
 
@@ -223,7 +223,7 @@ Here is a general guide to approaching these problems:
 
 These types of interviews are less common for internship and new grad roles, but they are still given. Make sure you ask your recruiter and find information online about your interviews to ensure you prepare appropriately.
 
-## Data Science Interview
+# Data Science Interview
 
 For data science internships, the technical interview mostly consists of questions that test your knowledge and understanding of Machine Learning and Artificial Intelligence topics. For instance, an interviewer may ask: What are the assumptions required for linear regression? How do you split data sets when training a model?
 

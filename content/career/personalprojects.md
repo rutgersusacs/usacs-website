@@ -94,17 +94,17 @@ Start by learning basic concepts using a youtube tutorial or Google’s machine 
 
 Here are some resources to help you get started:
 
-- [https://developers.google.com/machine-learning/crash-course](https://developers.google.com/machine-learning/crash-course) - Google’s ML Crash Course. It is a great starting place if you are brand new to Machine Learning.
-- [https://mlu-explain.github.io/](https://mlu-explain.github.io/) - Nice way to visualize ML concepts.
-- [https://themlbook.com/](https://themlbook.com/) - A highly rated 100 page Machine Learning textbook.
-- [https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html](https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html) - A textbook on Deep Learning if you want to take a deep dive into Neural Networks.
-- [https://www.statlearning.com/](https://www.statlearning.com/) - An excellent, free textbook on statistical learning in both R and Python.
-- [https://www.deeplearning.ai/courses/](https://www.deeplearning.ai/courses/) - [deeplearning.ai](http://deeplearning.ai) is the de facto place to go for excellent machine learning and AI courses. Led by famous researcher and Stanford Professor Andrew Ng.
-- [https://scikit-learn.org/stable/index.html](https://scikit-learn.org/stable/index.html) - Very popular machine learning library that implements common machine learning models for you, so you just need to call functions to build your model.
-- [https://youtu.be/V_xro1bcAuA?si=w8_aMY5pSXxChu7I](https://youtu.be/V_xro1bcAuA?si=w8_aMY5pSXxChu7I) - A 25-hour long course on PyTorch. It starts from the fundamentals of linear algebra in Python all the way to building complex ML models, and is really worth learning!
-- [https://docs.pytorch.org/tutorials/beginner/basics/intro.html](https://docs.pytorch.org/tutorials/beginner/basics/intro.html) - Using the FashionMNIST dataset to learn the full machine learning workflow in PyTorch, including tensors, data loading, model training, and basic classification.
-- [https://www.learnpytorch.io/](https://www.learnpytorch.io/) - A “Zero to Mastery” Guide to learning PyTorch
-- [https://www.tensorflow.org/guide/basics](https://www.tensorflow.org/guide/basics) - Some basics to Tensorflow.
+- [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course) - Google’s ML Crash Course. It is a great starting place if you are brand new to Machine Learning.
+- [ML Visualizer](https://mlu-explain.github.io/) - Nice way to visualize ML concepts.
+- [ML Book](https://themlbook.com/) - A highly rated 100 page Machine Learning textbook.
+- [Dive Into Deep Learning](https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html) - A textbook on Deep Learning if you want to take a deep dive into Neural Networks.
+- [Stat Learning](https://www.statlearning.com/) - An excellent, free textbook on statistical learning in both R and Python.
+- [deeplearning.ai](https://www.deeplearning.ai/courses/) - deeplearning.ai is the de facto place to go for excellent machine learning and AI courses. Led by famous researcher and Stanford Professor Andrew Ng.
+- [scikit-learn](https://scikit-learn.org/stable/index.html) - Very popular machine learning library that implements common machine learning models for you, so you just need to call functions to build your model.
+- [PyTorch Course](https://youtu.be/V_xro1bcAuA?si=w8_aMY5pSXxChu7I) - A 25-hour long course on PyTorch. It starts from the fundamentals of linear algebra in Python all the way to building complex ML models, and is really worth learning!
+- [PyTorch Tutorial](https://docs.pytorch.org/tutorials/beginner/basics/intro.html) - Using the FashionMNIST dataset to learn the full machine learning workflow in PyTorch, including tensors, data loading, model training, and basic classification.
+- [In Depth PyTorch Course](https://www.learnpytorch.io/) - A “Zero to Mastery” Guide to learning PyTorch
+- [TensorFlow](https://www.tensorflow.org/guide/basics) - Some basics to Tensorflow.
 
 ## General CS Knowledge:
 

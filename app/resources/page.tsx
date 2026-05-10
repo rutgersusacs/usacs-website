@@ -366,7 +366,7 @@ export default async function ResourcesPage() {
               </h3>
               <p className="text-base sm:text-lg lg:text-xl leading-7 sm:leading-8 text-[#54412F]">
                 The CSL (Coding & Social Lounge) is located on the second floor
-                of the Hill Bigliani Room 252. Part of the Computer Science
+                of the Hill Center Room 252. Part of the Computer Science
                 Instructional Labs, the CSL was designed to provide students
                 their own atmosphere for collaboration and group projects.
               </p>

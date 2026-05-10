@@ -1,6 +1,5 @@
 ---
 title: Resume
-writtenBy: Barghavi
 published: April 27, 2026
 readTime: 7 min
 ---
