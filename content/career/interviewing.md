@@ -34,7 +34,7 @@ It is vital that you know EXACTLY what you wrote on your resume and are able to 
 
 Your interviewer can also ask questions related to your own interests in tech or in the company (“Why [Company X]? Why are you interested in this role?” etc). This is why it is especially beneficial to write your resume yourself rather than entirely hand it off to an LLM to write it for you.
 
-## Behavioral Interviews
+# Behavioral Interviews
 
 ## Purpose
 
