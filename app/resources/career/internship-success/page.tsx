@@ -3,12 +3,12 @@ import path from "path";
 import matter from "gray-matter";
 import MarkdownPage from "@/app/components/MarkdownPage";
 
-export default function PersonalProjectsPage() {
+export default function InternshipSuccessPage() {
   const filePath = path.join(
     process.cwd(),
     "content",
     "career",
-    "personalprojects.md",
+    "internship-success.md",
   );
 
   const raw = fs.readFileSync(filePath, "utf8");

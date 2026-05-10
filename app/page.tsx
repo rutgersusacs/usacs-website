@@ -1,13 +1,16 @@
 import PageHeader from "./components/PageHeader";
 import PageSubtitle from "./components/PageSubtitle";
 
+// Homepage layout with the hero section, update box, about section, and group photo
 export default function HomePage() {
   return (
     <>
+      {/* Hero section with logo, mailing list button, social icons, and photo collage */}
       <PageHeader className="overflow-visible py-10 sm:py-14 lg:py-16 lg:min-h-[44vh]">
         <div className="relative mx-auto max-w-7xl pt-4 px-4 sm:px-8 lg:px-12 pb-28 sm:pb-44 md:pb-52 lg:pb-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-10">
             <div className="flex flex-col items-center text-center xl:text-left">
+              {/* Left side of hero: organization name, logo, mailing list button, and social icons */}
               <p className="mb-2 text-sm tracking-wide text-[var(--cream)] opacity-90 px-4 md:px-0">
                 Undergraduate Student Alliance of Computer Scientists
               </p>
@@ -82,6 +85,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex justify-center lg:justify-end w-full">
+              {/* Right side of hero: collage of event and community photos */}
               <div className="w-full max-w-[600px] lg:max-w-[640px]">
                 <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full aspect-[600/630] grid-rows-[1.1fr_1.1fr_1.6fr]">
                   <div className="row-span-2 overflow-hidden rounded-[32px]">
@@ -112,6 +116,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+          {/* Decorative tiger image that overlaps the hero and next section */}
           <img
             src="/icons/tiger.png"
             alt=""
@@ -129,13 +134,14 @@ export default function HomePage() {
           />
         </div>
       </PageHeader>
-
+      {/* Stay Updated section with important links for students */}
       <section className="bg-[var(--cream)] pt-20 md:pt-12 pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-[620px]">
               {/* Title */}
               <div className="mb-6 flex items-center gap-4">
+                {/* Stay Updated heading */}
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[var(--brown)]">
                   STAY UPDATED!
                 </h2>
@@ -143,12 +149,10 @@ export default function HomePage() {
               </div>
 
               {/* Info box */}
+              {/* Box listing ways students can stay connected (GroupMe, etc) */}
               <div className="bg-[var(--light-red-box)] px-7 py-6 rounded-[26px]">
                 <p className="text-[var(--usacs-red-dark)] text-xl sm:text-2xl md:text-3xl leading-8 sm:leading-9 md:leading-10">
                   Check out our <span className="font-extrabold">GroupMe</span>
-                  <br />
-                  Join our <span className="font-extrabold">Discord</span>{" "}
-                  server
                   <br />
                   Follow our <span className="font-extrabold">Instagram</span>
                   <br />
@@ -160,6 +164,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        {/* Description of what USACS is and what it offers */}
         <section className="bg-[#DED3BF] py-12 sm:py-16 md:py-20 mt-13">
           <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
             <p className="text-[var(--grey)] text-lg sm:text-xl md:text-2xl lg:text-[35px] leading-7 sm:leading-8 md:leading-10 lg:leading-14">
@@ -176,6 +181,7 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+        {/* Full-width group photo of the organization */}
         <section className="bg-[var(--cream)] pt-12 sm:pt-16 pb-4">
           <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
             <div className="rounded-[28px] bg-[var(--cream)]">
