@@ -329,6 +329,86 @@ export default async function ResourcesPage() {
               </p>
             </a>
           </Card>
+
+          {/* YOUTUBE */}
+          <Card
+            className="
+    w-full
+    min-h-[120px]
+    bg-[var(--resource-tile)]
+    text-[var(--cream)]
+    rounded-[22px]
+    px-6 py-5
+    text-center
+    shadow-[0_10px_20px_rgba(0,0,0,0.15)]
+    cursor-pointer
+  "
+          >
+            <a
+              href="https://youtube.com/@usacsrutgers"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full no-underline text-inherit"
+            >
+              <div
+                className="
+        mx-auto mb-3
+        flex h-16 w-16 items-center justify-center
+        rounded-full
+        bg-[var(--resource-circle)]
+      "
+              >
+                <img
+                  src="/icons/youtube.png"
+                  alt="YouTube"
+                  className="h-8 w-8 object-contain"
+                />
+              </div>
+
+              <h3 className="text-[var(--cream)] font-bold text-lg">YOUTUBE</h3>
+            </a>
+          </Card>
+
+          {/* MEDIUM BLOG */}
+          <Card
+            className="
+    w-full
+    min-h-[120px]
+    bg-[var(--resource-tile)]
+    text-[var(--cream)]
+    rounded-[22px]
+    px-6 py-5
+    text-center
+    shadow-[0_10px_20px_rgba(0,0,0,0.15)]
+    cursor-pointer
+  "
+          >
+            <a
+              href="https://medium.com/@rutgersusacs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full no-underline text-inherit"
+            >
+              <div
+                className="
+        mx-auto mb-3
+        flex h-16 w-16 items-center justify-center
+        rounded-full
+        bg-[var(--resource-circle)]
+      "
+              >
+                <img
+                  src="/icons/MediumBlog.png"
+                  alt="Medium"
+                  className="h-8 w-8 object-contain"
+                />
+              </div>
+
+              <h3 className="text-[var(--cream)] font-bold text-lg">
+                MEDIUM BLOG
+              </h3>
+            </a>
+          </Card>
         </section>
       </SectionWrapper>
 

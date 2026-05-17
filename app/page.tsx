@@ -22,27 +22,35 @@ export default function HomePage() {
               />
 
               <div className="mt-6">
-                <PageSubtitle
-                  className="
-                    inline-flex items-center gap-4
-                    py-4
-                    bg-[var(--resource-tile)]
-                    text-[var(--cream-light)]
-                    whitespace-nowrap
-                    rounded-full
-                    px-5
-                    mx-auto 
-                  "
+                <a
+                  href="https://rutgers.us3.list-manage.com/subscribe?u=d0e16a630d5a466a9afc69666&id=992091332f&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAR18WpleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafoZKZQSRKhKb43cdEpAZsEOPRcBKg3NnUwxv43JV-ElKMMSY_3N-oeu0RzxQ_aem_PqMgtAhxLcCYeHZnBQYnNQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <img
-                    src="/icons/mail.png"
-                    alt=""
-                    className="h-6 w-auto shrink-0"
-                  />
-                  <span className="font-extrabold tracking-wide">
-                    GET ON THE MAILING LIST
-                  </span>
-                </PageSubtitle>
+                  <PageSubtitle
+                    className="
+        inline-flex items-center gap-4
+        py-4
+        bg-[var(--resource-tile)]
+        text-[var(--cream-light)]
+        whitespace-nowrap
+        rounded-full
+        px-5
+        mx-auto
+        cursor-pointer
+      "
+                  >
+                    <img
+                      src="/icons/mail.png"
+                      alt=""
+                      className="h-6 w-auto shrink-0"
+                    />
+
+                    <span className="font-extrabold tracking-wide">
+                      GET ON THE MAILING LIST
+                    </span>
+                  </PageSubtitle>
+                </a>
 
                 <div className="mt-5 flex flex-wrap items-center gap-2 justify-center px-4 md:px-0">
                   <a

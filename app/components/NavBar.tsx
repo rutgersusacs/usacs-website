@@ -34,8 +34,8 @@ export default function NavBar() {
     // Sticky navbar that stays at the top while scrolling
     <nav className="sticky top-0 z-50 bg-[var(--usacs-red-dark)] shadow-sm">
       <div className="w-full px-6 sm:px-10 h-14 flex items-center justify-between">
-        <a href="/" className="text-white font-extrabold tracking-wide">
-          USACS
+        <a href="/">
+          <img src="/icons/usacslogo.png" alt="USACS" className="h-8 w-auto" />
         </a>
 
         {/* Desktop navigation (hidden on smaller screens) */}
